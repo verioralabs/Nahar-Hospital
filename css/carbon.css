@@ -362,8 +362,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 28px 0 clamp(48px, 6vw, 80px);
 }
 .hero-titlebar {
-  margin-bottom: clamp(24px, 3vw, 40px);
-  padding-bottom: 18px;
+  margin-bottom: clamp(28px, 3.5vw, 48px);
+  padding-bottom: 22px;
   border-bottom: 1px solid var(--gray-20);
 }
 .hero-grid {
@@ -377,23 +377,23 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .hero-copy { max-width: 640px; }
 
-/* H1 — slim title-bar above the grid */
+/* H1 — big prominent title-bar spanning menu bar width */
 .hero-h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 10px 16px;
+  gap: 14px 22px;
   font-family: var(--font-display);
-  font-size: clamp(1.375rem, 2.2vw, 1.75rem);
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
   font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   color: var(--ink);
   margin: 0;
 }
 .hero-h1-sub {
   font-family: var(--font-sans);
-  font-size: clamp(0.9rem, 1.4vw, 1rem);
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
   font-weight: 600;
   color: var(--green);
   letter-spacing: 0;
