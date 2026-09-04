@@ -154,52 +154,49 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   font-weight: 700;
   font-size: 1.0625rem;
   color: var(--navy);
+  white-space: nowrap;
 }
 .brand-logo-img {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   object-fit: cover;
   border: 1.5px solid var(--blue-20);
   background: var(--white);
   flex-shrink: 0;
 }
-.brand-text-wrap {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
 .brand-text {
   font-size: 1.0625rem;
   font-weight: 700;
   color: var(--navy);
 }
+.brand-sep {
+  color: var(--gray-30);
+  font-weight: 300;
+  margin: 0 2px;
+}
 .brand-bn {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   color: #198038;
-}
-.brand-icon {
-  width: 36px; height: 36px;
-  background: var(--blue-60);
-  color: #fff;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 700;
-  flex-shrink: 0;
 }
 .brand-sub {
   color: var(--gray-70);
   font-weight: 400;
   font-size: 0.8125rem;
-  margin-left: 4px;
+  margin-left: 2px;
+}
+@media (max-width: 768px) {
+  .brand-sub { display: none; }
+  .brand-sep { display: none; }
+  .brand-bn { font-size: 0.8125rem; }
+}
+@media (max-width: 480px) {
+  .brand-bn { display: none; }
 }
 .main-nav {
   display: none;
@@ -207,7 +204,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 60px;
   gap: 0;
 }
-@media (min-width: 1024px) { .main-nav { display: flex; } }
+@media (min-width: 1140px) { .main-nav { display: flex; } }
 .nav-item {
   display: flex;
   align-items: center;
@@ -236,7 +233,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: 40px; height: 40px;
   color: var(--ink);
 }
-@media (min-width: 1024px) { .menu-btn { display: none; } }
+@media (min-width: 1140px) { .menu-btn { display: none; } }
 
 /* ── Mobile drawer ───────────────────────────────────────────── */
 .mobile-nav {
