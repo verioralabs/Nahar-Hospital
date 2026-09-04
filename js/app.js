@@ -21,8 +21,8 @@ const translations = {
 
     // Hero
     heroTag:          "Govt. Registered Hospital & Diagnostic Center",
-    heroTitle:        "Compassionate, Advanced Healthcare for Savar",
-    heroDesc:         "Nahar General Hospital provides 24/7 emergency medical care, general and laparoscopic surgery, specialised gynecology & maternity services, pediatrics, and diagnostics at Parboti Nagar, Thana Road, Savar — opposite Enam Medical College.",
+    heroTitle:        "Advanced & Compassionate Healthcare",
+    heroDesc:         "Trusted, ethical medical care for families in Savar — 24/7 emergency response, advanced laparoscopic surgery, safe maternity, and full diagnostics under one roof, opposite Enam Medical College.",
     emergencyCallBtn: "Call Emergency Hotline",
     viewDoctorsBtn:   "Find a Specialist",
     stat247:          "24/7",
@@ -106,8 +106,8 @@ const translations = {
     navContact:       "যোগাযোগ",
 
     heroTag:          "সরকার নিবন্ধিত হাসপাতাল ও ডায়াগনস্টিক সেন্টার",
-    heroTitle:        "সাভারে আধুনিক ও মানবিক স্বাস্থ্যসেবা",
-    heroDesc:         "নাহার জেনারেল হাসপাতাল পারবতী নগর, থানা রোড, সাভার — এনাম মেডিকেল কলেজের বিপরীতে — ২৪ ঘণ্টা জরুরি চিকিৎসা, সার্জারি, গাইনি, মাতৃসেবা, শিশু বিভাগ এবং ডায়াগনস্টিক সেবা দিচ্ছে।",
+    heroTitle:        "আধুনিক ও মানবিক স্বাস্থ্যসেবা",
+    heroDesc:         "সাভারের পরিবারগুলোর জন্য বিশ্বস্ত ও নৈতিক চিকিৎসা সেবা — ২৪ ঘণ্টা জরুরি সেবা, উন্নত ল্যাপারোস্কোপিক সার্জারি, নিরাপদ মাতৃসেবা এবং এক ছাদের নিচে সম্পূর্ণ ডায়াগনস্টিক সুবিধা, এনাম মেডিকেল কলেজের বিপরীতে।",
     emergencyCallBtn: "জরুরি হটলাইনে ফোন করুন",
     viewDoctorsBtn:   "বিশেষজ্ঞ খুঁজুন",
     stat247:          "২৪/৭",
