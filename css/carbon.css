@@ -354,17 +354,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* ── Hero ────────────────────────────────────────────────────── */
 .hero {
-  background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(31, 111, 235, 0.10), transparent 60%),
-    radial-gradient(900px 500px at 0% 0%, rgba(207, 226, 255, 0.6), transparent 60%),
-    linear-gradient(180deg, #f4f8ff 0%, var(--white) 100%);
+  background: linear-gradient(135deg, #EAF4FF 0%, #F4EAFE 50%, #FFFFFF 100%);
   border-bottom: 1px solid var(--gray-20);
   padding: 28px 0 clamp(48px, 6vw, 80px);
 }
 .hero-titlebar {
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  padding: clamp(24px, 3vw, 36px) clamp(24px, 3vw, 36px);
   margin-bottom: clamp(28px, 3.5vw, 48px);
-  padding-bottom: 22px;
-  border-bottom: 1px solid var(--gray-20);
 }
 .hero-grid {
   display: grid;
@@ -493,10 +492,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* ── Hero info card (clean modern white) ─────────────────────── */
 .hero-panel {
-  background: var(--white);
-  border: 1px solid var(--gray-20);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   padding: 28px;
   display: flex;
   flex-direction: column;
@@ -509,8 +507,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(380px 200px at 100% 0%, rgba(31, 111, 235, 0.06), transparent 60%),
-    radial-gradient(380px 200px at 0% 100%, rgba(13, 138, 138, 0.05), transparent 60%);
+    radial-gradient(380px 200px at 100% 0%, rgba(31, 111, 235, 0.04), transparent 60%),
+    radial-gradient(380px 200px at 0% 100%, rgba(13, 138, 138, 0.04), transparent 60%);
   pointer-events: none;
 }
 .hero-panel > * { position: relative; z-index: 1; }
