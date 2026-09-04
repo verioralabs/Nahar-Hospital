@@ -142,6 +142,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   justify-content: space-between;
   width: 100%;
 }
+.brand-heading {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
 .brand {
   display: flex;
   align-items: center;
