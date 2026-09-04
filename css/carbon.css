@@ -387,7 +387,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.03em;
-  color: var(--ink);
+  color: var(--red);
   margin: 0;
 }
 .hero-h1-sub {
