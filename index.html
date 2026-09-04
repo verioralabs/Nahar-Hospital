@@ -28,7 +28,7 @@
           <a href="tel:01896271146" style="color: #ffffff;">01896-271146</a>
         </div>
         <div class="cds--top-links">
-          <span data-i18n="slogan" style="color: #a8a8a8; font-size: 0.8125rem;">Dedicated Healthcare in Savar</span>
+          <span data-i18n="slogan" style="color: #d0e2ff; font-size: 0.8125rem;">Dedicated Healthcare in Savar</span>
           <div class="cds--lang-toggle" role="group" aria-label="Language Switcher">
             <button id="lang-en" class="cds--lang-btn active" type="button">EN</button>
             <button id="lang-bn" class="cds--lang-btn" type="button">বাংলা</button>
@@ -38,7 +38,7 @@
     </div>
   </aside>
 
-  <!-- Carbon Header Shell -->
+  <!-- Carbon Header Shell (Clinical Light Theme) -->
   <header class="cds--header" role="banner">
     <div class="cds--grid" style="width: 100%;">
       <div class="cds--header-inner">
@@ -52,6 +52,7 @@
         <nav class="cds--header-nav" aria-label="Main Navigation">
           <a href="#about" class="cds--header-nav-item" data-i18n="navAbout">About Us</a>
           <a href="#services" class="cds--header-nav-item" data-i18n="navServices">Services</a>
+          <a href="#gallery" class="cds--header-nav-item" data-i18n="navGallery">Hospital Gallery</a>
           <a href="#doctors" class="cds--header-nav-item" data-i18n="navDoctors">Doctors</a>
           <a href="#diagnostics" class="cds--header-nav-item" data-i18n="navDiagnostics">Diagnostics</a>
           <a href="#maternity" class="cds--header-nav-item" data-i18n="navMaternity">Maternity Care</a>
@@ -64,7 +65,7 @@
             <svg viewBox="0 0 16 16"><path d="M12 4h-1V2h-1v2H6V2H5v2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm1 10c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V8h10v6zm0-7H3V6c0-.6.4-1 1-1h8c.6 0 1 .4 1 1v1z"/></svg>
           </button>
           <button id="mobile-menu-btn" class="cds--menu-trigger" aria-label="Open Navigation Menu" type="button">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
               <path d="M2 4h16v2H2V4zm0 5h16v2H2V9zm0 5h16v2H2v-2z"/>
             </svg>
           </button>
@@ -77,6 +78,7 @@
   <div id="mobile-nav" class="cds--mobile-nav" aria-label="Mobile Navigation">
     <a href="#about" class="cds--mobile-nav-link" data-i18n="navAbout">About Us</a>
     <a href="#services" class="cds--mobile-nav-link" data-i18n="navServices">Services</a>
+    <a href="#gallery" class="cds--mobile-nav-link" data-i18n="navGallery">Hospital Gallery</a>
     <a href="#doctors" class="cds--mobile-nav-link" data-i18n="navDoctors">Doctors</a>
     <a href="#diagnostics" class="cds--mobile-nav-link" data-i18n="navDiagnostics">Diagnostics</a>
     <a href="#maternity" class="cds--mobile-nav-link" data-i18n="navMaternity">Maternity Care</a>
@@ -88,49 +90,72 @@
     </div>
   </div>
 
-  <!-- Hero Lead Space (Carbon Spec) -->
+  <!-- Hero Lead Space (Clean Clinical Light Theme) -->
   <section id="hero" class="cds--hero">
     <div class="cds--grid">
-      <div class="cds--hero-content">
-        <span class="cds--leadspace-tag" data-i18n="heroTag">Govt. Registered Hospital & Diagnostic Center</span>
-        <h1 class="cds--hero-title" data-i18n="heroTitle">
-          Compassionate, Advanced <strong>Healthcare for Savar</strong>
-        </h1>
-        <p class="cds--hero-description" data-i18n="heroDesc">
-          Nahar General Hospital provides modern 24/7 emergency medical care, general and laparoscopic surgery, specialized gynecology & maternity services, pediatrics, and diagnostic facilities at Parboti Nagar, Thana Road, Savar.
-        </p>
+      <div class="cds--hero-container">
+        <div class="cds--hero-content">
+          <span class="cds--leadspace-tag" data-i18n="heroTag">Govt. Registered Hospital & Diagnostic Center</span>
+          <h1 class="cds--hero-title" data-i18n="heroTitle">
+            Compassionate, Advanced <strong>Healthcare for Savar</strong>
+          </h1>
+          <p class="cds--hero-description" data-i18n="heroDesc">
+            Nahar General Hospital provides modern 24/7 emergency medical care, general and laparoscopic surgery, specialized gynecology & maternity services, pediatrics, and diagnostic facilities at Parboti Nagar, Thana Road, Savar.
+          </p>
 
-        <div class="cds--hero-actions">
-          <a href="tel:01819701090" class="cds--btn cds--btn-danger">
-            <span data-i18n="emergencyCallBtn">Call Emergency Hotline</span>
-            <svg viewBox="0 0 16 16"><path d="M14.5 11.8l-2.4-1.2c-.3-.2-.7-.1-.9.2l-1 1.3c-2.1-1.1-3.7-2.7-4.8-4.8l1.3-1c.3-.2.4-.6.2-.9L5.7 2.9c-.2-.4-.7-.6-1.1-.4L2.2 3.6C1.5 4 1 4.7 1 5.6 1 10.8 5.2 15 10.4 15c.9 0 1.6-.5 2-1.2l1.1-2.4c.2-.4 0-.9-.4-1.1v1.5z"/></svg>
-          </a>
-          <button class="cds--btn cds--btn-primary" onclick="openBookingModal()" type="button">
-            <span data-i18n="bookBtn">Book Appointment</span>
-            <svg viewBox="0 0 16 16"><path d="M9.3 3.3L8.6 4 12.1 7.5H1v1h11.1L8.6 12l.7.7 4.7-4.7z"/></svg>
-          </button>
-          <a href="#doctors" class="cds--btn cds--btn-secondary">
-            <span data-i18n="viewDoctorsBtn">Find a Specialist</span>
-            <svg viewBox="0 0 16 16"><path d="M15 14.3L11.5 10.8c.8-.9 1.3-2.1 1.3-3.4 0-3-2.5-5.4-5.4-5.4S2 4.4 2 7.4 4.4 12.8 7.4 12.8c1.3 0 2.5-.5 3.4-1.3l3.5 3.5.7-.7zM3 7.4c0-2.4 2-4.4 4.4-4.4s4.4 2 4.4 4.4-2 4.4-4.4 4.4-4.4-2-4.4-4.4z"/></svg>
-          </a>
+          <div class="cds--hero-actions">
+            <a href="tel:01819701090" class="cds--btn cds--btn-danger">
+              <span data-i18n="emergencyCallBtn">Call Emergency Hotline</span>
+              <svg viewBox="0 0 16 16"><path d="M14.5 11.8l-2.4-1.2c-.3-.2-.7-.1-.9.2l-1 1.3c-2.1-1.1-3.7-2.7-4.8-4.8l1.3-1c.3-.2.4-.6.2-.9L5.7 2.9c-.2-.4-.7-.6-1.1-.4L2.2 3.6C1.5 4 1 4.7 1 5.6 1 10.8 5.2 15 10.4 15c.9 0 1.6-.5 2-1.2l1.1-2.4c.2-.4 0-.9-.4-1.1v1.5z"/></svg>
+            </a>
+            <button class="cds--btn cds--btn-primary" onclick="openBookingModal()" type="button">
+              <span data-i18n="bookBtn">Book Appointment</span>
+              <svg viewBox="0 0 16 16"><path d="M9.3 3.3L8.6 4 12.1 7.5H1v1h11.1L8.6 12l.7.7 4.7-4.7z"/></svg>
+            </button>
+            <a href="#gallery" class="cds--btn cds--btn-secondary">
+              <span data-i18n="viewGalleryBtn">View Hospital Tour</span>
+              <svg viewBox="0 0 16 16"><path d="M14 2H2a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1V3a1 1 0 00-1-1zm-1 10H3V4h10v8z"/><path d="M6 7l2.5 3 1.8-2.2L12 10H4z"/></svg>
+            </a>
+          </div>
+
+          <div class="cds--hero-highlights">
+            <div class="cds--highlight-item">
+              <span class="cds--highlight-value" data-i18n="stat247">24/7 Hours</span>
+              <span class="cds--highlight-label" data-i18n="stat247Desc">Emergency, Pharmacy & Lab</span>
+            </div>
+            <div class="cds--highlight-item">
+              <span class="cds--highlight-value" data-i18n="statDoctors">Specialists</span>
+              <span class="cds--highlight-label" data-i18n="statDoctorsDesc">Surgical, Gynae & Medicine</span>
+            </div>
+            <div class="cds--highlight-item">
+              <span class="cds--highlight-value" data-i18n="statDelivery">100% Safe</span>
+              <span class="cds--highlight-label" data-i18n="statDeliveryDesc">Normal & C-Section Delivery</span>
+            </div>
+            <div class="cds--highlight-item">
+              <span class="cds--highlight-value" data-i18n="statLocation">Savar Heart</span>
+              <span class="cds--highlight-label" data-i18n="statLocationDesc">Opp. Enam Medical College</span>
+            </div>
+          </div>
         </div>
 
-        <div class="cds--hero-highlights">
-          <div class="cds--highlight-item">
-            <span class="cds--highlight-value" data-i18n="stat247">24/7 Hours</span>
-            <span class="cds--highlight-label" data-i18n="stat247Desc">Emergency, Pharmacy & Lab</span>
+        <!-- Hero Visual Showcase Card -->
+        <div class="cds--hero-visual-card">
+          <div style="position: relative;">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80" alt="Nahar General Hospital Savar Facility" class="cds--hero-banner-img">
+            <span class="cds--tag cds--tag-teal" style="position: absolute; bottom: 12px; left: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+              📍 Thana Road, Savar Facility
+            </span>
           </div>
-          <div class="cds--highlight-item">
-            <span class="cds--highlight-value" data-i18n="statDoctors">Specialists</span>
-            <span class="cds--highlight-label" data-i18n="statDoctorsDesc">Surgical, Gynae & Medicine</span>
-          </div>
-          <div class="cds--highlight-item">
-            <span class="cds--highlight-value" data-i18n="statDelivery">100% Safe</span>
-            <span class="cds--highlight-label" data-i18n="statDeliveryDesc">Normal & C-Section Delivery</span>
-          </div>
-          <div class="cds--highlight-item">
-            <span class="cds--highlight-value" data-i18n="statLocation">Savar Heart</span>
-            <span class="cds--highlight-label" data-i18n="statLocationDesc">Opp. Enam Medical College</span>
+          <div class="cds--hero-visual-body">
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #001d6c; margin-bottom: 6px;">24/7 Modern Clinical & Surgical Complex</h4>
+            <p style="font-size: 0.875rem; color: var(--cds-text-secondary); line-height: 1.4;">
+              Equipped with sterile Operation Theatres, 4D Color Doppler USG, automated laboratory, and clean post-operative recovery rooms.
+            </p>
+            <div class="cds--hero-visual-pills">
+              <span class="cds--tag cds--tag-blue">Emergency Trauma</span>
+              <span class="cds--tag cds--tag-green">Safe Delivery Ward</span>
+              <span class="cds--tag cds--tag-teal">Digital Lab & X-Ray</span>
+            </div>
           </div>
         </div>
       </div>
@@ -208,8 +233,8 @@
         </div>
 
         <div class="cds--col" style="flex: 1 1 400px;">
-          <div style="background-color: var(--cds-layer-01); border: 1px solid var(--cds-border-subtle-01); padding: 32px;">
-            <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 16px;">Hospital Quality Commitment</h4>
+          <div style="background-color: var(--cds-layer-01); border: 1px solid var(--cds-border-subtle-01); padding: 32px; border-radius: 4px;">
+            <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 16px; color: #001d6c;">Hospital Quality Commitment</h4>
             <div style="display: flex; flex-direction: column; gap: 16px;">
               <div style="display: flex; gap: 12px;">
                 <div style="color: var(--cds-blue-60); font-weight: 700; font-family: var(--cds-font-mono);">01</div>
@@ -239,8 +264,123 @@
     </div>
   </section>
 
+  <!-- Hospital Photo & Media Gallery Section (NEW) -->
+  <section id="gallery" class="cds--section cds--section--light">
+    <div class="cds--grid">
+      <div class="cds--section-header">
+        <div class="cds--section-subhead" data-i18n="gallerySubhead">Hospital Tour & Media</div>
+        <h2 class="cds--section-title" data-i18n="galleryTitle">Facility Photos, Surgery Units & Community Work</h2>
+        <p class="cds--section-desc" data-i18n="galleryDesc">
+          Take a look inside Nahar General Hospital — from modern operation theatres and patient wards to community medical campaigns shared on our official Facebook page.
+        </p>
+      </div>
+
+      <div class="cds--gallery-grid">
+        <!-- Photo 1: Operation Theatre -->
+        <div class="cds--gallery-item">
+          <div class="cds--gallery-thumb-wrap">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="Modern Operation Theatre" class="cds--gallery-thumb">
+            <span class="cds--tag cds--tag-blue cds--gallery-badge">Surgical Facility</span>
+          </div>
+          <div class="cds--gallery-content">
+            <div>
+              <h4 class="cds--gallery-title">Modern Laparoscopic & General OT</h4>
+              <p class="cds--gallery-caption">Fully sterilized operation theatre equipped for gallbladder stone removal, appendectomy, and emergency surgeries.</p>
+            </div>
+            <a href="#services" class="cds--btn cds--btn-ghost cds--btn-sm">View Surgeries &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Photo 2: Maternity & Delivery -->
+        <div class="cds--gallery-item">
+          <div class="cds--gallery-thumb-wrap">
+            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=700&q=80" alt="Maternity & Normal Delivery Unit" class="cds--gallery-thumb">
+            <span class="cds--tag cds--tag-green cds--gallery-badge">Maternity Care</span>
+          </div>
+          <div class="cds--gallery-content">
+            <div>
+              <h4 class="cds--gallery-title">Safe Motherhood & Normal Delivery</h4>
+              <p class="cds--gallery-caption">Comforting and sterile maternity ward with round-the-clock female gynecologist and midwife supervision.</p>
+            </div>
+            <a href="#maternity" class="cds--btn cds--btn-ghost cds--btn-sm">Delivery Packages &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Photo 3: Diagnostics & Pathology -->
+        <div class="cds--gallery-item">
+          <div class="cds--gallery-thumb-wrap">
+            <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?auto=format&fit=crop&w=700&q=80" alt="Diagnostic Laboratory & 4D USG" class="cds--gallery-thumb">
+            <span class="cds--tag cds--tag-teal cds--gallery-badge">Diagnostic Center</span>
+          </div>
+          <div class="cds--gallery-content">
+            <div>
+              <h4 class="cds--gallery-title">4D Color Doppler USG & Digital Lab</h4>
+              <p class="cds--gallery-caption">High precision ultrasound scanning, computerized blood analyzers, and fast digital X-Ray report delivery.</p>
+            </div>
+            <a href="#diagnostics" class="cds--btn cds--btn-ghost cds--btn-sm">Diagnostics List &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Photo 4: Emergency & Reception -->
+        <div class="cds--gallery-item">
+          <div class="cds--gallery-thumb-wrap">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=700&q=80" alt="24/7 Emergency & Patient Reception" class="cds--gallery-thumb">
+            <span class="cds--tag cds--tag-red cds--gallery-badge">24/7 Active</span>
+          </div>
+          <div class="cds--gallery-content">
+            <div>
+              <h4 class="cds--gallery-title">24-Hour Emergency & Reception</h4>
+              <p class="cds--gallery-caption">Immediate reception, triage, urgent wound care, and ambulance assistance located opposite Enam Medical College.</p>
+            </div>
+            <a href="tel:01819701090" class="cds--btn cds--btn-ghost cds--btn-sm" style="color: var(--cds-support-error);">Emergency Call &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Photo 5: Facebook Video Feature 1 -->
+        <div class="cds--gallery-item">
+          <div class="cds--gallery-thumb-wrap">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=700&q=80" alt="Facebook Medical Video Update" class="cds--gallery-thumb">
+            <span class="cds--tag cds--tag-blue cds--gallery-badge">Facebook Video</span>
+            <a href="https://www.facebook.com/share/19K7Uxj7i6/" target="_blank" rel="noopener" class="cds--gallery-video-play" aria-label="Play on Facebook">
+              <div class="cds--play-icon">
+                <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5v11l9-5.5z"/></svg>
+              </div>
+            </a>
+          </div>
+          <div class="cds--gallery-content">
+            <div>
+              <h4 class="cds--gallery-title">Surgeon Health Talks & Live Tips</h4>
+              <p class="cds--gallery-caption">Consultant advice on laparoscopic gallbladder surgery, hernia prevention, and child fever management.</p>
+            </div>
+            <a href="https://www.facebook.com/share/19K7Uxj7i6/" target="_blank" rel="noopener" class="cds--btn cds--btn-ghost cds--btn-sm">Watch on Facebook &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Photo 6: Community Health Outreach -->
+        <div class="cds--gallery-item">
+          <div class="cds--gallery-thumb-wrap">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=700&q=80" alt="Community Health & Humanitarian Care" class="cds--gallery-thumb">
+            <span class="cds--tag cds--tag-teal cds--gallery-badge">Community Outreach</span>
+            <a href="https://www.facebook.com/share/19K7Uxj7i6/" target="_blank" rel="noopener" class="cds--gallery-video-play" aria-label="View on Facebook">
+              <div class="cds--play-icon">
+                <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5v11l9-5.5z"/></svg>
+              </div>
+            </a>
+          </div>
+          <div class="cds--gallery-content">
+            <div>
+              <h4 class="cds--gallery-title">Humanitarian Medical Support</h4>
+              <p class="cds--gallery-caption">Nahar General Hospital's outreach programs providing healthcare and emergency support for underprivileged patients.</p>
+            </div>
+            <a href="https://www.facebook.com/share/19K7Uxj7i6/" target="_blank" rel="noopener" class="cds--btn cds--btn-ghost cds--btn-sm">View Community Posts &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Clinical Services Section -->
-  <section id="services" class="cds--section cds--section--light">
+  <section id="services" class="cds--section">
     <div class="cds--grid">
       <div class="cds--section-header">
         <div class="cds--section-subhead" data-i18n="servicesSubhead">Clinical Departments</div>
@@ -369,7 +509,7 @@
   </section>
 
   <!-- Doctor Specialist Directory Section -->
-  <section id="doctors" class="cds--section">
+  <section id="doctors" class="cds--section cds--section--light">
     <div class="cds--grid">
       <div class="cds--section-header">
         <div class="cds--section-subhead" data-i18n="doctorsSubhead">Consultant Directory</div>
@@ -418,7 +558,7 @@
   </section>
 
   <!-- Diagnostics & Facility Table Section -->
-  <section id="diagnostics" class="cds--section cds--section--light">
+  <section id="diagnostics" class="cds--section">
     <div class="cds--grid">
       <div class="cds--section-header">
         <div class="cds--section-subhead">Hospital Diagnostics & Facilities</div>
@@ -489,7 +629,7 @@
   </section>
 
   <!-- Contact & Savar Map Section -->
-  <section id="contact" class="cds--section">
+  <section id="contact" class="cds--section cds--section--light">
     <div class="cds--grid">
       <div class="cds--section-header">
         <div class="cds--section-subhead" data-i18n="contactSubhead">Visit or Reach Us</div>
@@ -523,7 +663,7 @@
 
           <!-- Item 3: Hours -->
           <div class="cds--contact-item">
-            <svg class="cds--contact-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12zm1-18h-2v8h7v-2h-5z"/></svg>
+            <svg class="cds--contact-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1014 14A14.016 14.016 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12zm1-18h-2v8h7v-2h-5z"/></svg>
             <div>
               <h5 data-i18n="hoursTitle">Working Hours</h5>
               <p data-i18n="hoursDesc">Emergency, OT, Diagnostics & Pharmacy: Open 24 Hours / 7 Days a Week. Specialist Chambers: Daily 4:00 PM – 9:00 PM.</p>
@@ -548,7 +688,7 @@
             loading="lazy"
             allowfullscreen>
           </iframe>
-          <div style="padding: 12px; background: var(--cds-layer-01); font-size: 0.8125rem; color: var(--cds-text-secondary); border: 1px solid var(--cds-border-subtle-01); border-top: none;">
+          <div style="padding: 12px; background: #ffffff; font-size: 0.8125rem; color: var(--cds-text-secondary); border: 1px solid var(--cds-border-subtle-01); border-top: none;">
             📌 <strong>Landmark:</strong> Directly opposite Enam Medical College Hospital main gate, Thana Road, Parboti Nagar, Savar.
           </div>
         </div>
@@ -561,11 +701,11 @@
     <div class="cds--grid">
       <div class="cds--footer-grid">
         <div class="cds--footer-column" style="grid-column: span 1.5;">
-          <div class="cds--header-name" style="margin-bottom: 12px;">
+          <div class="cds--header-name" style="margin-bottom: 12px; color: #ffffff;">
             <span class="cds--logo-symbol">+</span>
             <span>Nahar General Hospital</span>
           </div>
-          <p style="color: #8d8d8d; font-size: 0.875rem; line-height: 1.5; margin-bottom: 16px;" data-i18n="footerAboutText">
+          <p style="color: #a8a8a8; font-size: 0.875rem; line-height: 1.5; margin-bottom: 16px;" data-i18n="footerAboutText">
             A premier private healthcare institution and diagnostic center situated opposite Enam Medical College in Savar, Dhaka. Committed to compassionate, ethical, and affordable clinical care.
           </p>
           <div style="color: #78a9ff; font-weight: 500; font-size: 0.8125rem;">
@@ -578,10 +718,10 @@
           <ul class="cds--footer-links">
             <li><a href="#services">General & Laparoscopic Surgery</a></li>
             <li><a href="#maternity">Safe Normal Delivery</a></li>
+            <li><a href="#gallery">Hospital Media & Photos</a></li>
             <li><a href="#services">Gynecology & C-Section</a></li>
             <li><a href="#services">Pediatrics & Neonatal Care</a></li>
             <li><a href="#diagnostics">Ultrasonography (USG 4D)</a></li>
-            <li><a href="#diagnostics">Digital X-Ray & Pathology</a></li>
           </ul>
         </div>
 
@@ -590,6 +730,7 @@
           <ul class="cds--footer-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Hospital</a></li>
+            <li><a href="#gallery">Hospital Gallery</a></li>
             <li><a href="#doctors">Consultant Directory</a></li>
             <li><a href="#diagnostics">Diagnostic Investigation</a></li>
             <li><a href="#contact">Map & Location</a></li>
