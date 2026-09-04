@@ -1,0 +1,1254 @@
+/* ==========================================================================
+   NAHAR GENERAL HOSPITAL - IBM CARBON DESIGN SYSTEM CSS
+   Specification: Carbon Design System v11 Tokens & Components
+   ========================================================================== */
+
+/* --- Import Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Bengali:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+/* --- Carbon Design Tokens --- */
+:root {
+  /* Carbon Blue Palette */
+  --cds-blue-10: #edf5ff;
+  --cds-blue-20: #d0e2ff;
+  --cds-blue-30: #a6c8ff;
+  --cds-blue-40: #78a9ff;
+  --cds-blue-50: #4589ff;
+  --cds-blue-60: #0f62fe; /* Primary Interactive */
+  --cds-blue-70: #0043ce;
+  --cds-blue-80: #002d9c;
+  --cds-blue-90: #001d6c;
+  --cds-blue-100: #001141;
+
+  /* Carbon Gray Neutral Palette (White Theme & Gray 10/100) */
+  --cds-ui-background: #ffffff;
+  --cds-layer-01: #f4f4f4;
+  --cds-layer-02: #ffffff;
+  --cds-layer-03: #e0e0e0;
+  --cds-field-01: #f4f4f4;
+  --cds-field-hover: #e8e8e8;
+  --cds-border-subtle-01: #e0e0e0;
+  --cds-border-strong-01: #8d8d8d;
+  
+  /* Text Tokens */
+  --cds-text-primary: #161616;
+  --cds-text-secondary: #525252;
+  --cds-text-placeholder: #a8a8a8;
+  --cds-text-on-color: #ffffff;
+  --cds-text-error: #da1e28;
+  
+  /* Clinical / Support Tokens */
+  --cds-support-error: #da1e28;
+  --cds-support-success: #24a148;
+  --cds-support-warning: #f1c21b;
+  --cds-support-info: #0043ce;
+  --cds-tag-teal-bg: #d2f6f1;
+  --cds-tag-teal-color: #005d5d;
+  --cds-tag-green-bg: #defbe6;
+  --cds-tag-green-color: #0e6027;
+  --cds-tag-blue-bg: #edf5ff;
+  --cds-tag-blue-color: #0043ce;
+  --cds-tag-red-bg: #fff1f1;
+  --cds-tag-red-color: #a2191f;
+
+  /* Carbon Spatial Grid & Spacing */
+  --cds-spacing-01: 0.125rem; /* 2px */
+  --cds-spacing-02: 0.25rem;  /* 4px */
+  --cds-spacing-03: 0.5rem;   /* 8px */
+  --cds-spacing-04: 0.75rem;  /* 12px */
+  --cds-spacing-05: 1rem;     /* 16px */
+  --cds-spacing-06: 1.5rem;   /* 24px */
+  --cds-spacing-07: 2rem;     /* 32px */
+  --cds-spacing-08: 2.5rem;   /* 40px */
+  --cds-spacing-09: 3rem;     /* 48px */
+  --cds-spacing-10: 4rem;     /* 64px */
+
+  /* Typography */
+  --cds-font-family: 'IBM Plex Sans', 'IBM Plex Sans Bengali', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --cds-font-mono: 'IBM Plex Mono', monospace;
+
+  /* Layout */
+  --cds-header-height: 48px;
+  --cds-banner-height: 36px;
+  --cds-max-width: 1312px;
+  --cds-transition-base: 150ms cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+/* --- Global Reset & Box Sizing --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--cds-font-family);
+  background-color: var(--cds-ui-background);
+  color: var(--cds-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Accessibility & Focus Styles (Carbon Spec) --- */
+:focus-visible {
+  outline: 2px solid var(--cds-blue-60);
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+/* --- Container & Carbon 16-Column Layout Grid --- */
+.cds--grid {
+  width: 100%;
+  max-width: var(--cds-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--cds-spacing-05);
+  padding-right: var(--cds-spacing-05);
+}
+
+@media (min-width: 672px) {
+  .cds--grid {
+    padding-left: var(--cds-spacing-07);
+    padding-right: var(--cds-spacing-07);
+  }
+}
+
+.cds--row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--cds-spacing-05) * -1);
+  margin-right: calc(var(--cds-spacing-05) * -1);
+}
+
+.cds--col {
+  flex: 1 0 0%;
+  padding-left: var(--cds-spacing-05);
+  padding-right: var(--cds-spacing-05);
+}
+
+/* --- Carbon Top Emergency Strip --- */
+.cds--top-strip {
+  background-color: #161616;
+  color: #f4f4f4;
+  font-size: 0.8125rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #393939;
+}
+
+.cds--top-strip-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cds--emergency-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #ff8389;
+  letter-spacing: 0.16px;
+}
+
+.cds--pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #da1e28;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(218, 30, 40, 0.7);
+  animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(218, 30, 40, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(218, 30, 40, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(218, 30, 40, 0); }
+}
+
+.cds--top-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cds--top-links a {
+  color: #c6c6c6;
+  transition: color var(--cds-transition-base);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cds--top-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.cds--lang-toggle {
+  display: inline-flex;
+  background-color: #262626;
+  border: 1px solid #525252;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.cds--lang-btn {
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8d8d8d;
+  transition: all var(--cds-transition-base);
+}
+
+.cds--lang-btn.active {
+  background-color: var(--cds-blue-60);
+  color: #ffffff;
+}
+
+/* --- Carbon Shell Header --- */
+.cds--header {
+  position: sticky;
+  top: 0;
+  z-index: 8000;
+  background-color: #161616;
+  color: #f4f4f4;
+  height: var(--cds-header-height);
+  border-bottom: 1px solid #393939;
+  display: flex;
+  align-items: center;
+}
+
+.cds--header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cds--header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cds--header-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  letter-spacing: 0.16px;
+  color: #ffffff;
+}
+
+.cds--logo-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--cds-blue-60);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 2px;
+}
+
+.cds--header-name .cds--name-sub {
+  color: #8d8d8d;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  margin-left: 6px;
+}
+
+.cds--header-nav {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .cds--header-nav {
+    display: flex;
+    align-items: center;
+    height: var(--cds-header-height);
+  }
+}
+
+.cds--header-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 100%;
+  color: #c6c6c6;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-bottom: 3px solid transparent;
+  transition: all var(--cds-transition-base);
+}
+
+.cds--header-nav-item:hover,
+.cds--header-nav-item.active {
+  color: #ffffff;
+  background-color: #262626;
+  border-bottom-color: var(--cds-blue-60);
+}
+
+.cds--header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cds--menu-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: #ffffff;
+}
+
+@media (min-width: 960px) {
+  .cds--menu-trigger {
+    display: none;
+  }
+}
+
+/* --- Carbon Buttons --- */
+.cds--btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  padding: calc(var(--cds-spacing-04) + 1px) var(--cds-spacing-07) calc(var(--cds-spacing-04) + 1px) var(--cds-spacing-05);
+  min-height: 48px;
+  cursor: pointer;
+  transition: background-color var(--cds-transition-base), border-color var(--cds-transition-base), color var(--cds-transition-base);
+  gap: 12px;
+}
+
+.cds--btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.cds--btn-sm {
+  min-height: 36px;
+  padding: 8px 16px;
+  font-size: 0.8125rem;
+}
+
+.cds--btn-primary {
+  background-color: var(--cds-blue-60);
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.cds--btn-primary:hover {
+  background-color: var(--cds-blue-70);
+}
+
+.cds--btn-secondary {
+  background-color: #393939;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.cds--btn-secondary:hover {
+  background-color: #4c4c4c;
+}
+
+.cds--btn-tertiary {
+  background-color: transparent;
+  color: var(--cds-blue-60);
+  border: 1px solid var(--cds-blue-60);
+}
+
+.cds--btn-tertiary:hover {
+  background-color: var(--cds-blue-60);
+  color: #ffffff;
+}
+
+.cds--btn-danger {
+  background-color: var(--cds-support-error);
+  color: #ffffff;
+}
+
+.cds--btn-danger:hover {
+  background-color: #b81921;
+}
+
+.cds--btn-ghost {
+  background-color: transparent;
+  color: var(--cds-blue-60);
+  border: 1px solid transparent;
+}
+
+.cds--btn-ghost:hover {
+  background-color: #e5e5e5;
+}
+
+/* --- Carbon Mobile Navigation Drawer --- */
+.cds--mobile-nav {
+  position: fixed;
+  top: 84px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 84px);
+  background-color: #161616;
+  z-index: 7999;
+  display: flex;
+  flex-direction: column;
+  padding: var(--cds-spacing-05);
+  transform: translateX(-100%);
+  transition: transform 0.25s cubic-bezier(0, 0, 0.38, 0.9);
+  overflow-y: auto;
+}
+
+.cds--mobile-nav.open {
+  transform: translateX(0);
+}
+
+.cds--mobile-nav-link {
+  color: #f4f4f4;
+  padding: 16px;
+  font-size: 1.125rem;
+  border-bottom: 1px solid #393939;
+  font-weight: 500;
+}
+
+.cds--mobile-nav-link:hover {
+  background-color: #262626;
+}
+
+/* --- Carbon Lead Space / Hero Section --- */
+.cds--hero {
+  background-color: #161616;
+  color: #ffffff;
+  padding: var(--cds-spacing-10) 0;
+  border-bottom: 1px solid #393939;
+  position: relative;
+  overflow: hidden;
+}
+
+.cds--hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle at 75% 30%, rgba(15, 98, 254, 0.15) 0%, rgba(22, 22, 22, 0) 70%);
+  pointer-events: none;
+}
+
+.cds--hero-content {
+  max-width: 800px;
+}
+
+.cds--leadspace-tag {
+  display: inline-block;
+  background-color: #262626;
+  color: #78a9ff;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.32px;
+  padding: 4px 12px;
+  text-transform: uppercase;
+  margin-bottom: var(--cds-spacing-05);
+  border-left: 3px solid var(--cds-blue-60);
+}
+
+.cds--hero-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: var(--cds-spacing-05);
+}
+
+.cds--hero-title strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@media (min-width: 672px) {
+  .cds--hero-title {
+    font-size: 3.25rem;
+  }
+}
+
+.cds--hero-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #c6c6c6;
+  margin-bottom: var(--cds-spacing-07);
+  max-width: 680px;
+}
+
+.cds--hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: var(--cds-spacing-07);
+}
+
+.cds--hero-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: var(--cds-spacing-08);
+  padding-top: var(--cds-spacing-06);
+  border-top: 1px solid #393939;
+}
+
+.cds--highlight-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cds--highlight-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #78a9ff;
+  font-family: var(--cds-font-mono);
+}
+
+.cds--highlight-label {
+  font-size: 0.875rem;
+  color: #a8a8a8;
+  margin-top: 4px;
+}
+
+/* --- Quick Action Carbon Tiles Bar --- */
+.cds--quick-tiles {
+  margin-top: -32px;
+  position: relative;
+  z-index: 20;
+}
+
+.cds--tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background-color: var(--cds-border-subtle-01);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cds--tile-interactive {
+  background-color: #ffffff;
+  padding: var(--cds-spacing-06);
+  position: relative;
+  transition: all var(--cds-transition-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  cursor: pointer;
+  border-top: 3px solid transparent;
+}
+
+.cds--tile-interactive:hover {
+  background-color: #f4f4f4;
+  border-top-color: var(--cds-blue-60);
+  transform: translateY(-2px);
+}
+
+.cds--tile-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: var(--cds-spacing-04);
+  color: var(--cds-blue-60);
+}
+
+.cds--tile-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--cds-text-primary);
+}
+
+.cds--tile-desc {
+  font-size: 0.875rem;
+  color: var(--cds-text-secondary);
+  line-height: 1.4;
+  margin-bottom: var(--cds-spacing-04);
+}
+
+.cds--tile-arrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--cds-blue-60);
+}
+
+/* --- General Section Layouts --- */
+.cds--section {
+  padding: var(--cds-spacing-09) 0;
+}
+
+.cds--section--light {
+  background-color: var(--cds-layer-01);
+}
+
+.cds--section-header {
+  margin-bottom: var(--cds-spacing-07);
+}
+
+.cds--section-subhead {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  color: var(--cds-blue-60);
+  margin-bottom: var(--cds-spacing-02);
+}
+
+.cds--section-title {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: var(--cds-text-primary);
+}
+
+.cds--section-title strong {
+  font-weight: 600;
+}
+
+.cds--section-desc {
+  font-size: 1rem;
+  color: var(--cds-text-secondary);
+  max-width: 720px;
+  margin-top: 8px;
+}
+
+/* --- Carbon Tag Component --- */
+.cds--tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.cds--tag-teal {
+  background-color: var(--cds-tag-teal-bg);
+  color: var(--cds-tag-teal-color);
+}
+
+.cds--tag-green {
+  background-color: var(--cds-tag-green-bg);
+  color: var(--cds-tag-green-color);
+}
+
+.cds--tag-blue {
+  background-color: var(--cds-tag-blue-bg);
+  color: var(--cds-tag-blue-color);
+}
+
+.cds--tag-red {
+  background-color: var(--cds-tag-red-bg);
+  color: var(--cds-tag-red-color);
+}
+
+/* --- Services & Department Grid --- */
+.cds--services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--cds-spacing-05);
+}
+
+.cds--service-card {
+  background-color: #ffffff;
+  border: 1px solid var(--cds-border-subtle-01);
+  padding: var(--cds-spacing-06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--cds-transition-base);
+}
+
+.cds--service-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: var(--cds-blue-40);
+}
+
+.cds--service-card-top {
+  margin-bottom: var(--cds-spacing-05);
+}
+
+.cds--service-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--cds-blue-10);
+  color: var(--cds-blue-60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: var(--cds-spacing-04);
+}
+
+.cds--service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--cds-text-primary);
+}
+
+.cds--service-desc {
+  font-size: 0.875rem;
+  color: var(--cds-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.cds--service-features {
+  list-style: none;
+  font-size: 0.8125rem;
+  color: var(--cds-text-secondary);
+  margin-bottom: var(--cds-spacing-05);
+}
+
+.cds--service-features li {
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cds--service-features li::before {
+  content: '•';
+  color: var(--cds-blue-60);
+  font-size: 1.2rem;
+  line-height: 0;
+}
+
+/* --- Doctor Specialist Directory --- */
+.cds--doctor-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: var(--cds-spacing-06);
+  background-color: #ffffff;
+  padding: 8px;
+  border: 1px solid var(--cds-border-subtle-01);
+}
+
+.cds--filter-pill {
+  padding: 8px 16px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background: transparent;
+  color: var(--cds-text-secondary);
+  border: 1px solid transparent;
+  transition: all var(--cds-transition-base);
+}
+
+.cds--filter-pill:hover {
+  background-color: var(--cds-layer-01);
+  color: var(--cds-text-primary);
+}
+
+.cds--filter-pill.active {
+  background-color: var(--cds-blue-60);
+  color: #ffffff;
+}
+
+.cds--doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: var(--cds-spacing-05);
+}
+
+.cds--doctor-card {
+  background-color: #ffffff;
+  border: 1px solid var(--cds-border-subtle-01);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--cds-transition-base);
+}
+
+.cds--doctor-card:hover {
+  border-color: var(--cds-blue-60);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.cds--doctor-card-header {
+  padding: var(--cds-spacing-05);
+  background-color: #ffffff;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid var(--cds-border-subtle-01);
+}
+
+.cds--doctor-avatar {
+  width: 64px;
+  height: 64px;
+  background-color: var(--cds-blue-10);
+  color: var(--cds-blue-70);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  border: 2px solid var(--cds-blue-20);
+}
+
+.cds--doctor-header-info h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--cds-text-primary);
+}
+
+.cds--doctor-dept {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--cds-blue-60);
+  margin-top: 2px;
+}
+
+.cds--doctor-card-body {
+  padding: var(--cds-spacing-05);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cds--doctor-qualification {
+  font-size: 0.875rem;
+  color: var(--cds-text-secondary);
+  line-height: 1.4;
+  margin-bottom: var(--cds-spacing-04);
+}
+
+.cds--doctor-meta {
+  background-color: var(--cds-layer-01);
+  padding: 12px;
+  border-radius: 2px;
+  margin-bottom: var(--cds-spacing-04);
+  font-size: 0.8125rem;
+}
+
+.cds--doctor-meta-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.cds--doctor-meta-row:last-child {
+  margin-bottom: 0;
+}
+
+.cds--doctor-meta-label {
+  color: var(--cds-text-secondary);
+}
+
+.cds--doctor-meta-value {
+  font-weight: 600;
+  color: var(--cds-text-primary);
+}
+
+/* --- Diagnostics & Facilities Data Table --- */
+.cds--data-table-container {
+  background: #ffffff;
+  border: 1px solid var(--cds-border-subtle-01);
+  overflow-x: auto;
+}
+
+.cds--table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.cds--table th {
+  background-color: var(--cds-layer-01);
+  color: var(--cds-text-primary);
+  font-weight: 600;
+  padding: 16px;
+  border-bottom: 1px solid var(--cds-border-strong-01);
+}
+
+.cds--table td {
+  padding: 16px;
+  border-bottom: 1px solid var(--cds-border-subtle-01);
+  color: var(--cds-text-secondary);
+}
+
+.cds--table tr:hover td {
+  background-color: var(--cds-blue-10);
+  color: var(--cds-text-primary);
+}
+
+/* --- Maternity & Delivery Feature Banner --- */
+.cds--feature-banner {
+  background: linear-gradient(135deg, #0f62fe 0%, #002d9c 100%);
+  color: #ffffff;
+  padding: var(--cds-spacing-08) var(--cds-spacing-07);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: var(--cds-spacing-08) 0;
+}
+
+@media (min-width: 768px) {
+  .cds--feature-banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.cds--feature-banner-content h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.cds--feature-banner-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+/* --- Contact & Location Section --- */
+.cds--contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--cds-spacing-06);
+}
+
+.cds--contact-info-card {
+  background: #ffffff;
+  border: 1px solid var(--cds-border-subtle-01);
+  padding: var(--cds-spacing-07);
+}
+
+.cds--contact-item {
+  margin-bottom: var(--cds-spacing-06);
+  display: flex;
+  gap: 16px;
+}
+
+.cds--contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.cds--contact-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--cds-blue-60);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cds--contact-item h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cds-text-primary);
+  margin-bottom: 4px;
+}
+
+.cds--contact-item p {
+  font-size: 0.875rem;
+  color: var(--cds-text-secondary);
+  line-height: 1.5;
+}
+
+.cds--contact-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.cds--phone-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--cds-font-mono);
+  font-weight: 600;
+  color: var(--cds-blue-70);
+  background-color: var(--cds-blue-10);
+  padding: 6px 12px;
+  border-radius: 2px;
+  width: fit-content;
+  font-size: 0.9375rem;
+}
+
+.cds--phone-badge:hover {
+  background-color: var(--cds-blue-20);
+}
+
+.cds--map-embed {
+  min-height: 380px;
+  width: 100%;
+  border: 1px solid var(--cds-border-subtle-01);
+  background-color: var(--cds-layer-01);
+}
+
+/* --- IBM Carbon Modal Component --- */
+.cds--modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 22, 22, 0.65);
+  backdrop-filter: blur(2px);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s cubic-bezier(0, 0, 0.38, 0.9), visibility 0.2s;
+}
+
+.cds--modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cds--modal-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 640px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(20px);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.38, 0.9);
+}
+
+.cds--modal-backdrop.open .cds--modal-container {
+  transform: translateY(0);
+}
+
+.cds--modal-header {
+  padding: 24px 24px 16px 24px;
+  border-bottom: 1px solid var(--cds-border-subtle-01);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cds--modal-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--cds-text-primary);
+}
+
+.cds--modal-header p {
+  font-size: 0.875rem;
+  color: var(--cds-text-secondary);
+  margin-top: 4px;
+}
+
+.cds--modal-close {
+  color: var(--cds-text-secondary);
+  padding: 8px;
+  transition: color var(--cds-transition-base);
+}
+
+.cds--modal-close:hover {
+  color: var(--cds-text-primary);
+}
+
+.cds--modal-body {
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.cds--form-group {
+  margin-bottom: 20px;
+}
+
+.cds--form-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  color: var(--cds-text-secondary);
+  margin-bottom: 8px;
+}
+
+.cds--form-control {
+  width: 100%;
+  height: 48px;
+  background-color: var(--cds-field-01);
+  border: none;
+  border-bottom: 1px solid var(--cds-border-strong-01);
+  padding: 0 16px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: var(--cds-text-primary);
+  transition: all var(--cds-transition-base);
+}
+
+.cds--form-control:focus {
+  outline: 2px solid var(--cds-blue-60);
+  background-color: #ffffff;
+}
+
+select.cds--form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23525252' d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+textarea.cds--form-control {
+  height: 100px;
+  padding: 12px 16px;
+  resize: vertical;
+}
+
+.cds--modal-footer {
+  padding: 16px 24px;
+  background-color: var(--cds-layer-01);
+  border-top: 1px solid var(--cds-border-subtle-01);
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* --- Carbon Alert Notification Banner --- */
+.cds--inline-notification {
+  display: flex;
+  background-color: #edf5ff;
+  border-left: 3px solid var(--cds-blue-60);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+  color: #001141;
+}
+
+/* --- Carbon Global Footer --- */
+.cds--footer {
+  background-color: #161616;
+  color: #c6c6c6;
+  padding-top: var(--cds-spacing-09);
+  padding-bottom: var(--cds-spacing-07);
+  border-top: 1px solid #393939;
+  font-size: 0.875rem;
+}
+
+.cds--footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--cds-spacing-07);
+  margin-bottom: var(--cds-spacing-08);
+}
+
+.cds--footer-column h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+  margin-bottom: var(--cds-spacing-05);
+}
+
+.cds--footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cds--footer-links a {
+  color: #a8a8a8;
+  transition: color var(--cds-transition-base);
+}
+
+.cds--footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.cds--footer-bottom {
+  padding-top: var(--cds-spacing-06);
+  border-top: 1px solid #262626;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.8125rem;
+  color: #6f6f6f;
+}
+
+.cds--footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.cds--footer-bottom-links a {
+  color: #8d8d8d;
+}
+
+.cds--footer-bottom-links a:hover {
+  color: #ffffff;
+}
+
+/* --- Mobile Responsive Tweaks --- */
+@media (max-width: 672px) {
+  .cds--top-strip {
+    font-size: 0.75rem;
+  }
+  
+  .cds--top-strip-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cds--hero {
+    padding: var(--cds-spacing-08) 0;
+  }
+
+  .cds--section {
+    padding: var(--cds-spacing-07) 0;
+  }
+
+  .cds--quick-tiles {
+    margin-top: 0;
+  }
+}

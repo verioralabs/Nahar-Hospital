@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nahar General Hospital | Savar, Dhaka - 24/7 Healthcare & Surgical Care</title>
+  <meta name="description" content="Nahar General Hospital is a leading private hospital and diagnostic center in Parboti Nagar, Thana Road, Savar, Dhaka (Opposite Enam Medical College). 24/7 emergency, laparoscopic surgery, normal & cesarean delivery, and specialist doctors.">
+  
+  <!-- Open Graph Meta for Facebook sharing -->
+  <meta property="og:title" content="Nahar General Hospital | 24/7 Healthcare in Savar">
+  <meta property="og:description" content="24/7 Emergency, General & Laparoscopic Surgery, Normal Delivery & Maternity, Child Specialist and Diagnostics in Savar, Dhaka.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/carbon.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230f62fe'/><path d='M14 8h4v6h6v4h-6v6h-4v-6H8v-4h6z' fill='white'/></svg>">
+</head>
+<body>
+
+  <!-- Carbon Top Emergency Bar -->
+  <aside class="cds--top-strip" aria-label="Emergency hotline and announcements">
+    <div class="cds--grid">
+      <div class="cds--top-strip-inner">
+        <div class="cds--emergency-badge">
+          <span class="cds--pulse-dot"></span>
+          <span data-i18n="topEmergency">24/7 EMERGENCY & AMBULANCE HOTLINE:</span>
+          <a href="tel:01819701090" style="color: #ffffff; font-weight: 700; text-decoration: underline;">01819-701090</a>
+          <span>|</span>
+          <a href="tel:01896271146" style="color: #ffffff;">01896-271146</a>
+        </div>
+        <div class="cds--top-links">
+          <span data-i18n="slogan" style="color: #a8a8a8; font-size: 0.8125rem;">Dedicated Healthcare in Savar</span>
+          <div class="cds--lang-toggle" role="group" aria-label="Language Switcher">
+            <button id="lang-en" class="cds--lang-btn active" type="button">EN</button>
+            <button id="lang-bn" class="cds--lang-btn" type="button">বাংলা</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Carbon Header Shell -->
+  <header class="cds--header" role="banner">
+    <div class="cds--grid" style="width: 100%;">
+      <div class="cds--header-inner">
+        <div class="cds--header-left">
+          <a href="#hero" class="cds--header-name">
+            <span class="cds--logo-symbol">+</span>
+            <span>Nahar General Hospital <span class="cds--name-sub">| Savar</span></span>
+          </a>
+        </div>
+
+        <nav class="cds--header-nav" aria-label="Main Navigation">
+          <a href="#about" class="cds--header-nav-item" data-i18n="navAbout">About Us</a>
+          <a href="#services" class="cds--header-nav-item" data-i18n="navServices">Services</a>
+          <a href="#doctors" class="cds--header-nav-item" data-i18n="navDoctors">Doctors</a>
+          <a href="#diagnostics" class="cds--header-nav-item" data-i18n="navDiagnostics">Diagnostics</a>
+          <a href="#maternity" class="cds--header-nav-item" data-i18n="navMaternity">Maternity Care</a>
+          <a href="#contact" class="cds--header-nav-item" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="cds--header-actions">
+          <button class="cds--btn cds--btn-primary cds--btn-sm" onclick="openBookingModal()" type="button">
+            <span data-i18n="bookBtn">Book Appointment</span>
+            <svg viewBox="0 0 16 16"><path d="M12 4h-1V2h-1v2H6V2H5v2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm1 10c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V8h10v6zm0-7H3V6c0-.6.4-1 1-1h8c.6 0 1 .4 1 1v1z"/></svg>
+          </button>
+          <button id="mobile-menu-btn" class="cds--menu-trigger" aria-label="Open Navigation Menu" type="button">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2 4h16v2H2V4zm0 5h16v2H2V9zm0 5h16v2H2v-2z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div id="mobile-nav" class="cds--mobile-nav" aria-label="Mobile Navigation">
+    <a href="#about" class="cds--mobile-nav-link" data-i18n="navAbout">About Us</a>
+    <a href="#services" class="cds--mobile-nav-link" data-i18n="navServices">Services</a>
+    <a href="#doctors" class="cds--mobile-nav-link" data-i18n="navDoctors">Doctors</a>
+    <a href="#diagnostics" class="cds--mobile-nav-link" data-i18n="navDiagnostics">Diagnostics</a>
+    <a href="#maternity" class="cds--mobile-nav-link" data-i18n="navMaternity">Maternity Care</a>
+    <a href="#contact" class="cds--mobile-nav-link" data-i18n="navContact">Contact</a>
+    <div style="padding: 16px; margin-top: 16px;">
+      <a href="tel:01819701090" class="cds--btn cds--btn-danger" style="width: 100%; justify-content: center;">
+        <span>Call Emergency: 01819-701090</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Lead Space (Carbon Spec) -->
+  <section id="hero" class="cds--hero">
+    <div class="cds--grid">
+      <div class="cds--hero-content">
+        <span class="cds--leadspace-tag" data-i18n="heroTag">Govt. Registered Hospital & Diagnostic Center</span>
+        <h1 class="cds--hero-title" data-i18n="heroTitle">
+          Compassionate, Advanced <strong>Healthcare for Savar</strong>
+        </h1>
+        <p class="cds--hero-description" data-i18n="heroDesc">
+          Nahar General Hospital provides modern 24/7 emergency medical care, general and laparoscopic surgery, specialized gynecology & maternity services, pediatrics, and diagnostic facilities at Parboti Nagar, Thana Road, Savar.
+        </p>
+
+        <div class="cds--hero-actions">
+          <a href="tel:01819701090" class="cds--btn cds--btn-danger">
+            <span data-i18n="emergencyCallBtn">Call Emergency Hotline</span>
+            <svg viewBox="0 0 16 16"><path d="M14.5 11.8l-2.4-1.2c-.3-.2-.7-.1-.9.2l-1 1.3c-2.1-1.1-3.7-2.7-4.8-4.8l1.3-1c.3-.2.4-.6.2-.9L5.7 2.9c-.2-.4-.7-.6-1.1-.4L2.2 3.6C1.5 4 1 4.7 1 5.6 1 10.8 5.2 15 10.4 15c.9 0 1.6-.5 2-1.2l1.1-2.4c.2-.4 0-.9-.4-1.1v1.5z"/></svg>
+          </a>
+          <button class="cds--btn cds--btn-primary" onclick="openBookingModal()" type="button">
+            <span data-i18n="bookBtn">Book Appointment</span>
+            <svg viewBox="0 0 16 16"><path d="M9.3 3.3L8.6 4 12.1 7.5H1v1h11.1L8.6 12l.7.7 4.7-4.7z"/></svg>
+          </button>
+          <a href="#doctors" class="cds--btn cds--btn-secondary">
+            <span data-i18n="viewDoctorsBtn">Find a Specialist</span>
+            <svg viewBox="0 0 16 16"><path d="M15 14.3L11.5 10.8c.8-.9 1.3-2.1 1.3-3.4 0-3-2.5-5.4-5.4-5.4S2 4.4 2 7.4 4.4 12.8 7.4 12.8c1.3 0 2.5-.5 3.4-1.3l3.5 3.5.7-.7zM3 7.4c0-2.4 2-4.4 4.4-4.4s4.4 2 4.4 4.4-2 4.4-4.4 4.4-4.4-2-4.4-4.4z"/></svg>
+          </a>
+        </div>
+
+        <div class="cds--hero-highlights">
+          <div class="cds--highlight-item">
+            <span class="cds--highlight-value" data-i18n="stat247">24/7 Hours</span>
+            <span class="cds--highlight-label" data-i18n="stat247Desc">Emergency, Pharmacy & Lab</span>
+          </div>
+          <div class="cds--highlight-item">
+            <span class="cds--highlight-value" data-i18n="statDoctors">Specialists</span>
+            <span class="cds--highlight-label" data-i18n="statDoctorsDesc">Surgical, Gynae & Medicine</span>
+          </div>
+          <div class="cds--highlight-item">
+            <span class="cds--highlight-value" data-i18n="statDelivery">100% Safe</span>
+            <span class="cds--highlight-label" data-i18n="statDeliveryDesc">Normal & C-Section Delivery</span>
+          </div>
+          <div class="cds--highlight-item">
+            <span class="cds--highlight-value" data-i18n="statLocation">Savar Heart</span>
+            <span class="cds--highlight-label" data-i18n="statLocationDesc">Opp. Enam Medical College</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Action Carbon Tiles -->
+  <section class="cds--quick-tiles" aria-label="Quick Hospital Services">
+    <div class="cds--grid">
+      <div class="cds--tile-grid">
+        <a href="tel:01819701090" class="cds--tile-interactive">
+          <div>
+            <svg class="cds--tile-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M26 18h-4v-4h-4v4h-4v4h4v4h4v-4h4v-4z"/><path fill="currentColor" d="M12 28H6a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v8h-2V6H6v20h6v2z"/></svg>
+            <h3 class="cds--tile-title" data-i18n="tile1Title">24/7 Emergency & Pharmacy</h3>
+            <p class="cds--tile-desc" data-i18n="tile1Desc">Immediate trauma response, critical patient care, and full in-house pharmacy day and night.</p>
+          </div>
+          <span class="cds--tile-arrow">Call 01819-701090 &rarr;</span>
+        </a>
+
+        <div class="cds--tile-interactive" onclick="openBookingModal()">
+          <div>
+            <svg class="cds--tile-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M26 4h-4V2h-2v2h-8V2h-2v2H6a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V6a2 2 0 00-2-2zm0 22H6V10h20v16zm0-18H6V6h4v2h2V6h8v2h2V6h4v2z"/></svg>
+            <h3 class="cds--tile-title" data-i18n="tile2Title">Doctor Appointments</h3>
+            <p class="cds--tile-desc" data-i18n="tile2Desc">Consult experienced surgeons, gynecologists, pediatricians, and general physicians.</p>
+          </div>
+          <span class="cds--tile-arrow">Book Chamber Serial &rarr;</span>
+        </div>
+
+        <a href="#services" class="cds--tile-interactive">
+          <div>
+            <svg class="cds--tile-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M28 20.4l-2.4-2.4c.8-1.7.5-3.8-.9-5.2l-3-3a4.95 4.95 0 00-7 0L4.4 20.1c-1.9 1.9-1.9 5.1 0 7 1.9 1.9 5.1 1.9 7 0l10.3-10.3c1.4-1.4 1.7-3.5.9-5.2l2.4 2.4c.8.8 2 .8 2.8 0 .8-.7.8-2 .2-2.8z"/></svg>
+            <h3 class="cds--tile-title" data-i18n="tile3Title">Laparoscopic Surgery</h3>
+            <p class="cds--tile-desc" data-i18n="tile3Desc">Minimally invasive appendix, gallbladder, hernia, and emergency surgical operations.</p>
+          </div>
+          <span class="cds--tile-arrow">Explore Procedures &rarr;</span>
+        </a>
+
+        <a href="#maternity" class="cds--tile-interactive">
+          <div>
+            <svg class="cds--tile-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1014 14A14.016 14.016 0 0016 2zm0 26a12 12 0 1112-12 12.013 12.013 0 01-12 12z"/><path fill="currentColor" d="M16 8a8 8 0 108 8 8.009 8.009 0 00-8-8zm0 14a6 6 0 116-6 6.007 6.007 0 01-6 6z"/></svg>
+            <h3 class="cds--tile-title" data-i18n="tile4Title">Maternity & Normal Delivery</h3>
+            <p class="cds--tile-desc" data-i18n="tile4Desc">Dedicated obstetrics team ensuring safe normal delivery and emergency C-section support.</p>
+          </div>
+          <span class="cds--tile-arrow">View Maternity Packages &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="cds--section">
+    <div class="cds--grid">
+      <div class="cds--row" style="align-items: center;">
+        <div class="cds--col" style="flex: 1 1 500px; margin-bottom: 24px;">
+          <div class="cds--section-subhead">Welcome to Nahar General Hospital</div>
+          <h2 class="cds--section-title">Reliable Healthcare for <strong>You & Your Family</strong></h2>
+          <p class="cds--section-desc" style="margin-bottom: 16px;">
+            Located right across from Enam Medical College Hospital on Thana Road in Parboti Nagar, Savar, <strong>Nahar General Hospital</strong> is a certified private medical institution dedicated to delivering dependable, ethical, and community-focused healthcare.
+          </p>
+          <p class="cds--section-desc" style="margin-bottom: 24px;">
+            Our facility features an advanced minor and major operation theatre (OT), digital diagnostics, ultrasonic imaging, day care wards, and round-the-clock emergency medical response.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px;">
+            <span class="cds--tag cds--tag-teal">DGHS Registered Facility</span>
+            <span class="cds--tag cds--tag-green">24/7 Duty Doctors</span>
+            <span class="cds--tag cds--tag-blue">Digital Lab & USG</span>
+            <span class="cds--tag cds--tag-red">Emergency OT Active</span>
+          </div>
+
+          <a href="https://www.facebook.com/share/19K7Uxj7i6/" target="_blank" rel="noopener" class="cds--btn cds--btn-tertiary">
+            <span>Visit Our Official Facebook Page</span>
+            <svg viewBox="0 0 16 16"><path d="M13 1H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h5v-5H6.5V8H8V6.5c0-1.7 1.1-2.6 2.6-2.6.7 0 1.4.1 1.4.1v1.6h-.8c-.9 0-1.1.5-1.1 1.1V8h2l-.3 2H10v5h3c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2z"/></svg>
+          </a>
+        </div>
+
+        <div class="cds--col" style="flex: 1 1 400px;">
+          <div style="background-color: var(--cds-layer-01); border: 1px solid var(--cds-border-subtle-01); padding: 32px;">
+            <h4 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 16px;">Hospital Quality Commitment</h4>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="display: flex; gap: 12px;">
+                <div style="color: var(--cds-blue-60); font-weight: 700; font-family: var(--cds-font-mono);">01</div>
+                <div>
+                  <h5 style="font-weight: 600; font-size: 0.9375rem;">Patient First Compassion</h5>
+                  <p style="font-size: 0.8125rem; color: var(--cds-text-secondary);">Empathetic nursing and clinical staff available 24 hours a day to attend to every patient with dignity.</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 12px;">
+                <div style="color: var(--cds-blue-60); font-weight: 700; font-family: var(--cds-font-mono);">02</div>
+                <div>
+                  <h5 style="font-weight: 600; font-size: 0.9375rem;">Affordable & Transparent</h5>
+                  <p style="font-size: 0.8125rem; color: var(--cds-text-secondary);">Clear package pricing for deliveries, laparoscopic operations, and diagnostic tests without hidden costs.</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 12px;">
+                <div style="color: var(--cds-blue-60); font-weight: 700; font-family: var(--cds-font-mono);">03</div>
+                <div>
+                  <h5 style="font-weight: 600; font-size: 0.9375rem;">Hygienic Sterilized Operation Theatres</h5>
+                  <p style="font-size: 0.8125rem; color: var(--cds-text-secondary);">Strict protocol compliance for infection control during general surgery, C-sections, and wound dressings.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinical Services Section -->
+  <section id="services" class="cds--section cds--section--light">
+    <div class="cds--grid">
+      <div class="cds--section-header">
+        <div class="cds--section-subhead" data-i18n="servicesSubhead">Clinical Departments</div>
+        <h2 class="cds--section-title" data-i18n="servicesTitle">Comprehensive Medical & Surgical Care</h2>
+        <p class="cds--section-desc" data-i18n="servicesDesc">
+          Our hospital brings together modern medical technologies and dedicated healthcare professionals to serve the community of Savar and surrounding areas.
+        </p>
+      </div>
+
+      <div class="cds--services-grid">
+        <!-- Service 1 -->
+        <div class="cds--service-card">
+          <div class="cds--service-card-top">
+            <div class="cds--service-icon">
+              <svg width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M28 20.4l-2.4-2.4c.8-1.7.5-3.8-.9-5.2l-3-3a4.95 4.95 0 00-7 0L4.4 20.1c-1.9 1.9-1.9 5.1 0 7 1.9 1.9 5.1 1.9 7 0l10.3-10.3c1.4-1.4 1.7-3.5.9-5.2l2.4 2.4c.8.8 2 .8 2.8 0 .8-.7.8-2 .2-2.8z"/></svg>
+            </div>
+            <h3 class="cds--service-title">General & Laparoscopic Surgery</h3>
+            <p class="cds--service-desc">State-of-the-art minimally invasive surgeries ensuring smaller incisions, minimal scarring, and quick recovery.</p>
+            <ul class="cds--service-features">
+              <li>Laparoscopic Cholecystectomy (Gallbladder stone)</li>
+              <li>Laparoscopic Appendectomy</li>
+              <li>Hernia repair & Hydrocele</li>
+              <li>Breast tumor & Thyroid surgery</li>
+              <li>Emergency pediatric trauma operations</li>
+            </ul>
+          </div>
+          <button class="cds--btn cds--btn-ghost" onclick="openBookingModal()">Consult Surgeon &rarr;</button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="cds--service-card">
+          <div class="cds--service-card-top">
+            <div class="cds--service-icon">
+              <svg width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 4a6 6 0 106 6 6 6 0 00-6-6zm0 10a4 4 0 114-4 4 4 0 01-4 4zm8 8a6 6 0 00-6-6h-4a6 6 0 00-6 6v6h16v-6z"/></svg>
+            </div>
+            <h3 class="cds--service-title">Gynecology & Obstetrics</h3>
+            <p class="cds--service-desc">Comprehensive maternal healthcare from antenatal counseling to safe childbirth and postnatal rehabilitation.</p>
+            <ul class="cds--service-features">
+              <li>Painless & Safe Normal Delivery</li>
+              <li>Emergency & Elective Cesarean Section (C-Section)</li>
+              <li>High-risk pregnancy management</li>
+              <li>Infertility workup & menstrual disorder treatment</li>
+              <li>Antenatal regular ultrasonography checkups</li>
+            </ul>
+          </div>
+          <button class="cds--btn cds--btn-ghost" onclick="openBookingModal()">Meet Gynae Specialist &rarr;</button>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="cds--service-card">
+          <div class="cds--service-card-top">
+            <div class="cds--service-icon">
+              <svg width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1014 14A14.016 14.016 0 0016 2zm0 26a12 12 0 1112-12 12.013 12.013 0 01-12 12z"/><circle cx="11" cy="14" r="2" fill="currentColor"/><circle cx="21" cy="14" r="2" fill="currentColor"/><path fill="currentColor" d="M16 22a5.006 5.006 0 01-4.9-4h9.8A5.006 5.006 0 0116 22z"/></svg>
+            </div>
+            <h3 class="cds--service-title">Pediatrics & Neonatal Care</h3>
+            <p class="cds--service-desc">Dedicated child specialists managing infant illnesses, neonatal jaundice, pediatric infections, and vaccination guidance.</p>
+            <ul class="cds--service-features">
+              <li>Newborn immediate assessment & care</li>
+              <li>Pediatric acute respiratory care</li>
+              <li>Child nutrition & growth monitoring</li>
+              <li>Routine immunizations counseling</li>
+              <li>Emergency pediatric admission</li>
+            </ul>
+          </div>
+          <button class="cds--btn cds--btn-ghost" onclick="openBookingModal()">Book Pediatrician &rarr;</button>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="cds--service-card">
+          <div class="cds--service-card-top">
+            <div class="cds--service-icon">
+              <svg width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12-5.4 12-12 12z"/><path fill="currentColor" d="M16 8v8l6 3.5-1 1.7L14 17V8h2z"/></svg>
+            </div>
+            <h3 class="cds--service-title">Internal Medicine & Diabetes</h3>
+            <p class="cds--service-desc">Expert diagnosis and systematic management of chronic and acute adult conditions.</p>
+            <ul class="cds--service-features">
+              <li>Hypertension & Cardiovascular assessment</li>
+              <li>Diabetes Mellitus management & counseling</li>
+              <li>Fever, Typhoid, Dengue & Viral care</li>
+              <li>Gastrointestinal & Liver disorders</li>
+              <li>Kidney function & Geriatric medicine</li>
+            </ul>
+          </div>
+          <button class="cds--btn cds--btn-ghost" onclick="openBookingModal()">Consult Physician &rarr;</button>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="cds--service-card">
+          <div class="cds--service-card-top">
+            <div class="cds--service-icon">
+              <svg width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M20 2H8a2 2 0 00-2 2v24a2 2 0 002 2h16a2 2 0 002-2V8l-6-6zm4 26H8V4h11v5h5v19z"/></svg>
+            </div>
+            <h3 class="cds--service-title">Pathology & Diagnostic Center</h3>
+            <p class="cds--service-desc">Fast, calibrated diagnostic investigations equipped with computerized analyzers for accurate clinical reports.</p>
+            <ul class="cds--service-features">
+              <li>Hematology & Complete Blood Count (CBC)</li>
+              <li>Biochemistry & Lipid, Liver, Renal profiles</li>
+              <li>Hormonal tests & Thyroid profiles</li>
+              <li>Digital X-Ray & 12-lead ECG</li>
+              <li>Ultrasonography (USG 4D color doppler)</li>
+            </ul>
+          </div>
+          <a href="#diagnostics" class="cds--btn cds--btn-ghost">View Test Directory &rarr;</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="cds--service-card">
+          <div class="cds--service-card-top">
+            <div class="cds--service-icon">
+              <svg width="24" height="24" viewBox="0 0 32 32"><path fill="currentColor" d="M26 18h-4v-4h-4v4h-4v4h4v4h4v-4h4v-4z"/><path fill="currentColor" d="M12 28H6a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v8h-2V6H6v20h6v2z"/></svg>
+            </div>
+            <h3 class="cds--service-title">24/7 Emergency & Pharmacy</h3>
+            <p class="cds--service-desc">Fully prepared emergency trauma unit and well-stocked pharmacy open non-stop for urgent care.</p>
+            <ul class="cds--service-features">
+              <li>Emergency wound debridement & stitching</li>
+              <li>Nebulization & immediate Oxygen support</li>
+              <li>Burn care & acute injury stabilization</li>
+              <li>Authentic medicines & surgical supplies</li>
+              <li>Rapid transfer & ambulance coordination</li>
+            </ul>
+          </div>
+          <a href="tel:01819701090" class="cds--btn cds--btn-ghost" style="color: var(--cds-support-error);">Emergency Call &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Specialist Directory Section -->
+  <section id="doctors" class="cds--section">
+    <div class="cds--grid">
+      <div class="cds--section-header">
+        <div class="cds--section-subhead" data-i18n="doctorsSubhead">Consultant Directory</div>
+        <h2 class="cds--section-title" data-i18n="doctorsTitle">Specialist Doctors & Surgeons</h2>
+        <p class="cds--section-desc" data-i18n="doctorsDesc">
+          Book regular and urgent appointments with leading professors, consultants, and surgeons.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="cds--doctor-filter-bar" role="toolbar" aria-label="Filter doctors by department">
+        <button class="cds--filter-pill active" data-filter="all" data-i18n="filterAll" type="button">All Specialists</button>
+        <button class="cds--filter-pill" data-filter="surgery" data-i18n="filterSurgery" type="button">General & Laparoscopic Surgery</button>
+        <button class="cds--filter-pill" data-filter="gynae" data-i18n="filterGynae" type="button">Gynecology & Obstetrics</button>
+        <button class="cds--filter-pill" data-filter="pediatrics" data-i18n="filterPediatrics" type="button">Pediatrics & Child Care</button>
+        <button class="cds--filter-pill" data-filter="medicine" data-i18n="filterMedicine" type="button">Internal Medicine</button>
+      </div>
+
+      <!-- Doctor Cards Dynamic Container -->
+      <div id="doctors-list" class="cds--doctors-grid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Maternity & Delivery Feature Banner -->
+  <section id="maternity" class="cds--grid">
+    <div class="cds--feature-banner">
+      <div class="cds--feature-banner-content">
+        <span class="cds--tag cds--tag-teal" style="background: rgba(255,255,255,0.2); color: #fff; margin-bottom: 12px;">Safe Motherhood Initiative</span>
+        <h3>Dedicated Normal Delivery & Maternity Unit</h3>
+        <p>
+          At Nahar General Hospital, our specialized female gynecologists and trained mid-wives prioritize safe, natural normal delivery in a sterile, comforting environment, supported 24/7 by fully equipped emergency surgical teams.
+        </p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; min-width: 220px;">
+        <button class="cds--btn cds--btn-secondary" onclick="openBookingModal()" style="background-color: #ffffff; color: #161616;" type="button">
+          <span>Inquire Delivery Packages</span>
+          <svg viewBox="0 0 16 16"><path d="M9.3 3.3L8.6 4 12.1 7.5H1v1h11.1L8.6 12l.7.7 4.7-4.7z"/></svg>
+        </button>
+        <a href="tel:01819701090" class="cds--btn cds--btn-tertiary" style="border-color: #ffffff; color: #ffffff;">
+          <span>Hotline: 01819-701090</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diagnostics & Facility Table Section -->
+  <section id="diagnostics" class="cds--section cds--section--light">
+    <div class="cds--grid">
+      <div class="cds--section-header">
+        <div class="cds--section-subhead">Hospital Diagnostics & Facilities</div>
+        <h2 class="cds--section-title">Diagnostic Capabilities & Timings</h2>
+        <p class="cds--section-desc">
+          State-of-the-art diagnostic machinery operated by experienced medical technologists to provide timely and accurate results.
+        </p>
+      </div>
+
+      <div class="cds--data-table-container">
+        <table class="cds--table" aria-label="Hospital Diagnostic Services and Timings">
+          <thead>
+            <tr>
+              <th scope="col">Department / Investigation</th>
+              <th scope="col">Equipment & Details</th>
+              <th scope="col">Availability</th>
+              <th scope="col">Reporting Time</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-weight: 600; color: var(--cds-text-primary);">Ultrasonography (USG)</td>
+              <td>4D Color Doppler USG for Whole Abdomen, Pregnancy Profile & Thyroid</td>
+              <td>Daily 9:00 AM – 9:00 PM</td>
+              <td>Same Day (Within 1-2 hours)</td>
+              <td><button class="cds--btn cds--btn-ghost cds--btn-sm" onclick="openBookingModal()">Book Serial</button></td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600; color: var(--cds-text-primary);">Digital X-Ray</td>
+              <td>High-frequency computerized digital imaging (Chest, Bones, Spine)</td>
+              <td>24 Hours Open</td>
+              <td>Within 30 Minutes</td>
+              <td><a href="tel:01819701090" class="cds--btn cds--btn-ghost cds--btn-sm">Inquire</a></td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600; color: var(--cds-text-primary);">Clinical Pathology</td>
+              <td>Automated Hematology Analyzer (CBC, ESR, Blood Grouping)</td>
+              <td>24 Hours Open</td>
+              <td>1 Hour</td>
+              <td><button class="cds--btn cds--btn-ghost cds--btn-sm" onclick="openBookingModal()">Book Test</button></td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600; color: var(--cds-text-primary);">Biochemistry & Serology</td>
+              <td>Blood Sugar, Lipid, Liver (SGPT/SGOT), Kidney (Creatinine), Electrolytes</td>
+              <td>Daily 7:30 AM – 10:30 PM</td>
+              <td>Same Day Evening</td>
+              <td><button class="cds--btn cds--btn-ghost cds--btn-sm" onclick="openBookingModal()">Book Test</button></td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600; color: var(--cds-text-primary);">12-Lead ECG</td>
+              <td>Digital Electrocardiogram with expert physician review</td>
+              <td>24 Hours Open</td>
+              <td>Immediate Report</td>
+              <td><a href="tel:01819701090" class="cds--btn cds--btn-ghost cds--btn-sm">Instant</a></td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600; color: var(--cds-text-primary);">Modern Operation Theatre (OT)</td>
+              <td>Laparoscopic Surgical Tower, C-Section Unit, Anesthesia Workstation</td>
+              <td>24 Hours Emergency & Scheduled</td>
+              <td>Immediate Clinical Notes</td>
+              <td><a href="tel:01819701090" class="cds--btn cds--btn-ghost cds--btn-sm">Emergency OT</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Savar Map Section -->
+  <section id="contact" class="cds--section">
+    <div class="cds--grid">
+      <div class="cds--section-header">
+        <div class="cds--section-subhead" data-i18n="contactSubhead">Visit or Reach Us</div>
+        <h2 class="cds--section-title" data-i18n="contactTitle">Hospital Location & Contact Center</h2>
+        <p class="cds--section-desc">Conveniently situated in Savar Thana Road opposite Enam Medical College Hospital.</p>
+      </div>
+
+      <div class="cds--contact-grid">
+        <div class="cds--contact-info-card">
+          <!-- Item 1: Address -->
+          <div class="cds--contact-item">
+            <svg class="cds--contact-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a10 10 0 00-10 10c0 7 10 18 10 18s10-11 10-18A10 10 0 0016 2zm0 14a4 4 0 114-4 4 4 0 01-4 4z"/></svg>
+            <div>
+              <h5 data-i18n="addressTitle">Hospital Address</h5>
+              <p data-i18n="addressDesc">1/2 Parboti Nagar, Thana Road, Savar, Dhaka, Bangladesh (Opposite Enam Medical College Hospital)</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Phones -->
+          <div class="cds--contact-item">
+            <svg class="cds--contact-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M26 21.4l-3.8-1.9a2 2 0 00-2.3.4l-1.6 1.6A17.9 17.9 0 0110.5 13.7l1.6-1.6a2 2 0 00.4-2.3L10.6 6a2 2 0 00-2.3-1.1L3.5 6.2A2 2 0 002 8.1C2 19.1 10.9 28 21.9 28a2 2 0 001.9-1.5l1.3-4.8a2 2 0 00-1.1-2.3z"/></svg>
+            <div>
+              <h5 data-i18n="phoneTitle">Direct Hotlines</h5>
+              <div class="cds--contact-numbers">
+                <a href="tel:01819701090" class="cds--phone-badge">📞 01819-701090 (Emergency & Serial)</a>
+                <a href="tel:01896271146" class="cds--phone-badge">📞 01896-271146 (Reception)</a>
+                <a href="tel:01896271147" class="cds--phone-badge">📞 01896-271147 (Duty Desk)</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Hours -->
+          <div class="cds--contact-item">
+            <svg class="cds--contact-icon" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1014 14A14 14 0 0016 2zm0 26a12 12 0 1112-12 12 12 0 01-12 12zm1-18h-2v8h7v-2h-5z"/></svg>
+            <div>
+              <h5 data-i18n="hoursTitle">Working Hours</h5>
+              <p data-i18n="hoursDesc">Emergency, OT, Diagnostics & Pharmacy: Open 24 Hours / 7 Days a Week. Specialist Chambers: Daily 4:00 PM – 9:00 PM.</p>
+            </div>
+          </div>
+
+          <!-- Social Link -->
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--cds-border-subtle-01);">
+            <a href="https://www.facebook.com/share/19K7Uxj7i6/" target="_blank" rel="noopener" class="cds--btn cds--btn-secondary" style="width: 100%;">
+              <span>Connect on Facebook Page</span>
+              <svg viewBox="0 0 16 16"><path d="M13 1H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h5v-5H6.5V8H8V6.5c0-1.7 1.1-2.6 2.6-2.6.7 0 1.4.1 1.4.1v1.6h-.8c-.9 0-1.1.5-1.1 1.1V8h2l-.3 2H10v5h3c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Map Savar Embed -->
+        <div style="display: flex; flex-direction: column;">
+          <iframe 
+            class="cds--map-embed"
+            title="Nahar General Hospital Location Savar"
+            src="https://maps.google.com/maps?q=Enam+Medical+College+Hospital+Savar+Dhaka&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+          <div style="padding: 12px; background: var(--cds-layer-01); font-size: 0.8125rem; color: var(--cds-text-secondary); border: 1px solid var(--cds-border-subtle-01); border-top: none;">
+            📌 <strong>Landmark:</strong> Directly opposite Enam Medical College Hospital main gate, Thana Road, Parboti Nagar, Savar.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carbon Footer -->
+  <footer class="cds--footer" role="contentinfo">
+    <div class="cds--grid">
+      <div class="cds--footer-grid">
+        <div class="cds--footer-column" style="grid-column: span 1.5;">
+          <div class="cds--header-name" style="margin-bottom: 12px;">
+            <span class="cds--logo-symbol">+</span>
+            <span>Nahar General Hospital</span>
+          </div>
+          <p style="color: #8d8d8d; font-size: 0.875rem; line-height: 1.5; margin-bottom: 16px;" data-i18n="footerAboutText">
+            A premier private healthcare institution and diagnostic center situated opposite Enam Medical College in Savar, Dhaka. Committed to compassionate, ethical, and affordable clinical care.
+          </p>
+          <div style="color: #78a9ff; font-weight: 500; font-size: 0.8125rem;">
+            Reg No. Private Hospital & Diagnostic Center (Savar)
+          </div>
+        </div>
+
+        <div class="cds--footer-column">
+          <h4 data-i18n="footerServicesTitle">Key Facilities</h4>
+          <ul class="cds--footer-links">
+            <li><a href="#services">General & Laparoscopic Surgery</a></li>
+            <li><a href="#maternity">Safe Normal Delivery</a></li>
+            <li><a href="#services">Gynecology & C-Section</a></li>
+            <li><a href="#services">Pediatrics & Neonatal Care</a></li>
+            <li><a href="#diagnostics">Ultrasonography (USG 4D)</a></li>
+            <li><a href="#diagnostics">Digital X-Ray & Pathology</a></li>
+          </ul>
+        </div>
+
+        <div class="cds--footer-column">
+          <h4>Navigation</h4>
+          <ul class="cds--footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Hospital</a></li>
+            <li><a href="#doctors">Consultant Directory</a></li>
+            <li><a href="#diagnostics">Diagnostic Investigation</a></li>
+            <li><a href="#contact">Map & Location</a></li>
+            <li><a href="https://www.facebook.com/share/19K7Uxj7i6/" target="_blank" rel="noopener">Official Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="cds--footer-column">
+          <h4 data-i18n="footerContactTitle">Emergency 24/7</h4>
+          <p style="font-size: 0.875rem; color: #a8a8a8; margin-bottom: 8px;">
+            Immediate Doctor & Ambulance Call:
+          </p>
+          <p style="font-family: var(--cds-font-mono); font-size: 1.125rem; font-weight: 600; color: #ffffff; margin-bottom: 6px;">
+            01819-701090
+          </p>
+          <p style="font-family: var(--cds-font-mono); font-size: 0.9375rem; color: #c6c6c6; margin-bottom: 16px;">
+            01896-271146 / 47
+          </p>
+          <button class="cds--btn cds--btn-primary cds--btn-sm" onclick="openBookingModal()" style="width: 100%;">
+            <span>Book Doctor Chamber</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="cds--footer-bottom">
+        <div data-i18n="footerCopyright">
+          © 2026 Nahar General Hospital, Savar. All rights reserved. Designed to IBM Carbon UI specifications.
+        </div>
+        <div class="cds--footer-bottom-links">
+          <a href="#about">Privacy & Ethics</a>
+          <a href="#contact">Emergency Contacts</a>
+          <a href="https://www.facebook.com/share/19K7Uxj7i6/" target="_blank" rel="noopener">Facebook Community</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Carbon Appointment Booking Modal -->
+  <div id="booking-modal" class="cds--modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="cds--modal-container">
+      <div class="cds--modal-header">
+        <div>
+          <h3 id="modal-title" data-i18n="modalTitle">Request an Appointment</h3>
+          <p data-i18n="modalDesc">Fill in patient information below. Our hotline desk will confirm your appointment instantly via phone or WhatsApp.</p>
+        </div>
+        <button id="modal-close-btn" class="cds--modal-close" aria-label="Close dialog" type="button">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12 4.7L11.3 4 8 7.3 4.7 4 4 4.7 7.3 8 4 11.3l.7.7 3.3-3.3 3.3 3.3.7-.7L8.7 8z"/>
+          </svg>
+        </button>
+      </div>
+
+      <form id="appointment-form">
+        <div class="cds--modal-body">
+          <div class="cds--inline-notification">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="#0043ce" style="margin-right: 8px; flex-shrink: 0; margin-top: 2px;">
+              <path d="M8 1C4.1 1 1 4.1 1 8s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zm0 13c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm-.5-9h1v4h-1zm0 5h1v1h-1z"/>
+            </svg>
+            <div>
+              <strong>For immediate trauma or critical emergency:</strong> Please call directly at <a href="tel:01819701090" style="font-weight: 700; text-decoration: underline; color: #0043ce;">01819-701090</a>.
+            </div>
+          </div>
+
+          <div class="cds--form-group">
+            <label class="cds--form-label" for="patient-name" data-i18n="formFullName">Patient Full Name *</label>
+            <input type="text" id="patient-name" class="cds--form-control" placeholder="e.g. Md. Hasan Ali / Rokeya Begum" required>
+          </div>
+
+          <div class="cds--form-group">
+            <label class="cds--form-label" for="patient-phone" data-i18n="formPhone">Mobile Phone Number *</label>
+            <input type="tel" id="patient-phone" class="cds--form-control" placeholder="e.g. 017xxxxxxxx / 018xxxxxxxx" required>
+          </div>
+
+          <div class="cds--form-group">
+            <label class="cds--form-label" for="patient-dept" data-i18n="formDept">Select Department</label>
+            <select id="patient-dept" class="cds--form-control">
+              <option value="General & Laparoscopic Surgery">General & Laparoscopic Surgery</option>
+              <option value="Gynecology & Obstetrics">Gynecology & Obstetrics (Maternity)</option>
+              <option value="Pediatrics & Child Health">Pediatrics & Child Health</option>
+              <option value="Internal Medicine & Diabetes">Internal Medicine & Diabetes</option>
+              <option value="Diagnostic Investigation (USG / X-Ray / Lab)">Diagnostic Investigation (USG / X-Ray / Lab)</option>
+            </select>
+          </div>
+
+          <div class="cds--form-group">
+            <label class="cds--form-label" for="modal-doctor-select" data-i18n="formDoctor">Preferred Specialist</label>
+            <select id="modal-doctor-select" class="cds--form-control">
+              <!-- Dynamically populated -->
+            </select>
+          </div>
+
+          <div class="cds--form-group">
+            <label class="cds--form-label" for="appointment-date" data-i18n="formDate">Preferred Date</label>
+            <input type="date" id="appointment-date" class="cds--form-control">
+          </div>
+
+          <div class="cds--form-group">
+            <label class="cds--form-label" for="patient-notes" data-i18n="formNotes">Symptoms / Reason for Visit (Optional)</label>
+            <textarea id="patient-notes" class="cds--form-control" placeholder="Describe symptoms briefly..."></textarea>
+          </div>
+        </div>
+
+        <div class="cds--modal-footer">
+          <button id="modal-cancel-btn" class="cds--btn cds--btn-secondary" type="button" data-i18n="formCancel">Cancel</button>
+          <button type="submit" class="cds--btn cds--btn-primary" data-i18n="formSubmit">
+            <span>Confirm & Send Request</span>
+            <svg viewBox="0 0 16 16"><path d="M9.3 3.3L8.6 4 12.1 7.5H1v1h11.1L8.6 12l.7.7 4.7-4.7z"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
