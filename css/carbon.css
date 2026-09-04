@@ -948,10 +948,129 @@ textarea.form-control { height: 100px; padding: 12px 16px; resize: vertical; }
 .footer-bottom-links a { color: #6f6f6f; }
 .footer-bottom-links a:hover { color: #fff; }
 
+/* ── Hero banner image (Nahar-Banner) ──────────────────────── */
+.hero-banner-img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin-top: var(--sp-2);
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  background: #fff;
+  padding: 4px;
+}
+
+/* ── Doctor Photo Wall ─────────────────────────────────────── */
+.doctor-wall {
+  background: var(--white);
+}
+.doctor-wall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--sp-4);
+  margin-top: var(--sp-4);
+}
+.wall-card {
+  background: var(--white);
+  border: 1px solid var(--gray-20);
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  cursor: pointer;
+}
+.wall-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--blue-60);
+  box-shadow: 0 12px 28px rgba(0,29,108,0.10);
+}
+.wall-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--blue-10), var(--blue-20));
+}
+.wall-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.wall-card:hover .wall-photo img { transform: scale(1.06); }
+.wall-info {
+  padding: var(--sp-3) var(--sp-2);
+  background: var(--white);
+}
+.wall-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+.wall-title {
+  font-size: 0.8125rem;
+  color: var(--blue-60);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ── Health Package Card ───────────────────────────────────── */
+.package-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 0;
+  background: var(--white);
+  border: 1px solid var(--gray-20);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,29,108,0.05);
+}
+.package-card-photo {
+  position: relative;
+  min-height: 260px;
+  background: linear-gradient(135deg, var(--blue-10), var(--blue-20));
+}
+.package-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.package-card-body {
+  padding: var(--sp-5) var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--sp-2);
+}
+.package-card-title {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+}
+.package-card-body p {
+  color: var(--gray-70);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.package-card-ctas {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+  margin-top: var(--sp-3);
+}
+
 /* ── Responsive breath ───────────────────────────────────────── */
 @media (max-width: 672px) {
   .section { padding-block: var(--sp-7); }
   .hero { padding: var(--sp-7) 0 var(--sp-5); }
   .tiles-wrap { margin-top: 0; }
   .emergency-bar .wrap { justify-content: center; text-align: center; }
+  .package-card { grid-template-columns: 1fr; }
+  .package-card-photo { min-height: 200px; }
+  .package-card-body { padding: var(--sp-4); }
 }
