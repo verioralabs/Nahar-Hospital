@@ -402,6 +402,35 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 400;
 }
 
+.hero-curasos {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--gray-20);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #475569;
+  letter-spacing: 0.005em;
+}
+.hero-curasos-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--blue-60);
+  flex-shrink: 0;
+}
+.hero-curasos strong {
+  font-weight: 700;
+  color: var(--blue-70);
+  letter-spacing: 0.01em;
+}
+.hero-curasos-sep {
+  color: var(--gray-30);
+  margin: 0 2px;
+}
+
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;

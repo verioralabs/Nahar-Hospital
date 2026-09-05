@@ -56,7 +56,7 @@ const translations = {
 
     // Doctors
     doctorsSubhead:   "Consultant Directory",
-    doctorsTitle:     "Specialist Doctors & Surgeons",
+    doctorsTitle:     "Distinguished Clinical Experts — Ultra Specialist Doctors & Surgeons",
     doctorsDesc:      "Book appointments with experienced consultants. Call 01819-701090 to confirm visiting hours and chamber availability.",
     filterAll:        "All Specialists",
     filterSurgery:    "Surgery",
@@ -137,7 +137,7 @@ const translations = {
     galleryDesc:    "নাহার জেনারেল হাসপাতালের গুরুত্বপূর্ণ ক্লিনিকাল এলাকার একটি ওভারভিউ। ছবি, ভিডিও ও কমিউনিটি কার্যক্রমের আপডেটের জন্য আমাদের অফিসিয়াল ফেসবুক পেজ ফলো করুন।",
 
     doctorsSubhead:   "চিকিৎসক পরিচিতি",
-    doctorsTitle:     "বিশেষজ্ঞ চিকিৎসক ও সার্জন",
+    doctorsTitle:     "বিশিষ্ট ক্লিনিকাল বিশেষজ্ঞ — আল্ট্রা স্পেশালিস্ট চিকিৎসক ও সার্জন",
     doctorsDesc:      "অভিজ্ঞ চিকিৎসকদের সাথে অ্যাপয়েন্টমেন্ট নিন। ভিজিটিং আওয়ার নিশ্চিত করতে ০১৮১৯-৭০১০৯০ তে কল করুন।",
     filterAll:        "সকল বিশেষজ্ঞ",
     filterSurgery:    "সার্জারি",
