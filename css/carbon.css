@@ -403,8 +403,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .hero-curasos {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
   margin-top: 16px;
   padding-top: 14px;
@@ -414,11 +415,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1.4;
   color: #475569;
   letter-spacing: 0.005em;
+  text-align: right;
 }
 .hero-curasos-icon {
   width: 14px;
   height: 14px;
-  color: var(--blue-60);
+  color: #f5b400;
   flex-shrink: 0;
 }
 .hero-curasos strong {
