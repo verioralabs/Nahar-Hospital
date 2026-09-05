@@ -32,7 +32,7 @@ const translations = {
     statDelivery:     "Safe",
     statDeliveryDesc: "Normal & C-Section Delivery",
     statLocation:     "Savar",
-    statLocationDesc: "Opp. Enam Medical College",
+    statLocationDesc: "Opposite Enam Medical College",
 
     // Tiles
     tile1Title: "24/7 Emergency & Pharmacy",
