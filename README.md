@@ -1,6 +1,6 @@
 # Nahar General Hospital Website (সাভার, ঢাকা)
 
-Modern, accessible, responsive healthcare website for **Nahar General Hospital** built strictly adhering to the **IBM Carbon Design System v11** standards.
+Modern, accessible, responsive healthcare website for **Nahar General Hospital** with a clean, modern healthcare UI.
 
 Official Facebook Page: [https://www.facebook.com/share/19K7Uxj7i6/](https://www.facebook.com/share/19K7Uxj7i6/)
 
@@ -10,11 +10,11 @@ Repository: [https://github.com/verioralabs/Nahar-Hospital](https://github.com/v
 
 ## Key Features
 
-1. **IBM Carbon UI Standard**:
-   - 16-Column Carbon Layout Grid & standard spacing tokens (`--cds-spacing-*`).
-   - IBM Plex Sans & IBM Plex Sans Bengali typography.
-   - Carbon Color palette: Carbon Blue (`#0f62fe`), Gray 100 (`#161616`), Gray 10 (`#f4f4f4`), clinical tags, and interactive tiles.
-   - Accessible keyboard focus states (`outline: 2px solid #0f62fe`).
+1. **Modern Healthcare UI**:
+   - Responsive CSS Grid & Flexbox layout with a custom spacing scale (`--sp-1` … `--sp-9`).
+   - Inter & Plus Jakarta Sans typography, with IBM Plex Sans Bengali for Bangla and JetBrains Mono for numeric/hotline text.
+   - Modern healthcare palette: primary blue (`#1f6feb`), navy (`#0a2a6b`), teal, green and red accents, clinical tags, and interactive tiles.
+   - Accessible keyboard focus states (`outline: 2px solid var(--blue-60)`).
 
 2. **Core Hospital Services & Information**:
    - **Emergency 24/7 Hotline Bar** with pulse indicator (`01819-701090`, `01896-271146`, `01896-271147`).
@@ -29,7 +29,7 @@ Repository: [https://github.com/verioralabs/Nahar-Hospital](https://github.com/v
    - Localized specialist details, hospital timings, and clinical terms for Savar residents.
 
 4. **Interactive Appointment Booking Modal**:
-   - Carbon Design compliant modal dialog with focus management.
+   - Accessible modal dialog with focus management and keyboard trap.
    - Department and doctor selector with preferred dates.
    - Direct integration with WhatsApp hotline for instantaneous serial confirmation.
 
