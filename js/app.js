@@ -609,13 +609,20 @@ function setupMobileNav() {
     link.addEventListener("click", function() { setOpen(false); });
   });
 
+  document.querySelectorAll(".js-drawer-book").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      setOpen(false);
+      openBookingModal();
+    });
+  });
+
   document.addEventListener("keydown", function(e){
     if (e.key === "Escape" && mobileNav.classList.contains("open")) setOpen(false);
   });
 
-  // Close on resize to desktop
+  // Close on resize to desktop (matches CSS desktop-nav breakpoint)
   window.addEventListener("resize", function(){
-    if (window.innerWidth >= 1140 && mobileNav.classList.contains("open")) setOpen(false);
+    if (window.innerWidth >= 1101 && mobileNav.classList.contains("open")) setOpen(false);
   });
 }
 

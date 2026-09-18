@@ -189,7 +189,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 72px;
   display: flex;
   align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
+.site-header .wrap { max-width: 100%; }
 .site-header.is-scrolled {
   box-shadow: 0 1px 0 var(--gray-20), 0 4px 12px rgba(15,23,42,0.04);
 }
@@ -199,6 +203,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   justify-content: space-between;
   gap: var(--sp-3);
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 .brand-mark {
   display: inline-flex;
@@ -225,14 +232,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 72px;
   gap: 4px;
   flex: 1;
+  min-width: 0;
   justify-content: center;
 }
-@media (min-width: 1140px) { .main-nav { display: flex; } }
+@media (min-width: 1101px) { .main-nav { display: flex; } }
 .nav-item {
   display: inline-flex;
   align-items: center;
   height: 40px;
-  padding: 0 16px;
+  padding: 0 12px;
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--gray-70);
@@ -245,11 +253,26 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--blue-10);
 }
 .nav-item:focus-visible { outline-offset: -2px; }
+/* Compact desktop band — keep the full row contained on 1280px laptops */
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .header-inner { gap: var(--sp-2); }
+  .main-nav { gap: 2px; }
+  .nav-item { padding: 0 8px; font-size: 0.875rem; }
+  .header-cta { gap: 8px; }
+  .header-cta .blood-finder-pill { height: 40px; padding: 0 12px; font-size: 0.8125rem; }
+  .header-cta .btn-primary { padding: 0 14px; }
+}
 .header-cta {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
+  min-width: 0;
+}
+/* Blood-finder + Book buttons live in the drawer until the desktop nav returns */
+@media (max-width: 1100px) {
+  .header-cta .blood-finder-pill,
+  .header-cta .btn-primary { display: none; }
 }
 .menu-btn {
   display: flex;
@@ -264,7 +287,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .menu-btn:hover { background: var(--gray-10); border-color: var(--gray-20); }
 .menu-btn[aria-expanded="true"] { background: var(--blue-10); color: var(--blue-70); border-color: var(--blue-20); }
-@media (min-width: 1140px) { .menu-btn { display: none; } }
+@media (min-width: 1101px) { .menu-btn { display: none; } }
 
 /* ── Mobile drawer ───────────────────────────────────────────── */
 .mobile-nav {
@@ -424,11 +447,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @media (max-width: 560px) {
   .blood-finder-pill { height: 40px; padding: 0 14px; font-size: 0.8125rem; }
 }
-.mobile-nav-blood {
-  color: var(--red) !important;
-  font-weight: 700 !important;
+/* Drawer CTAs — hidden on desktop, stacked vertically on tablet/mobile */
+.mobile-nav-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 16px 8px;
+  border-top: 1px solid var(--gray-20);
 }
-.mobile-nav-blood:hover { background: var(--red-bg) !important; color: #a2191f !important; }
+.mobile-nav-ctas .btn { width: 100%; justify-content: center; }
+.mobile-nav-ctas .blood-finder-pill { width: 100%; justify-content: center; }
+@media (min-width: 1101px) { .mobile-nav-ctas { display: none; } }
 
 /* ── LifeNet featured service card ───────────────────────────── */
 .service-card-lifenet {
@@ -1422,7 +1451,7 @@ textarea.form-control { height: 88px; min-height: 88px; padding: 12px 16px; resi
 }
 @media (max-width: 640px) {
   .footer-bottom { justify-content: center; text-align: center; }
-  .curaos-footer-badge { font-size: 0.72rem; }
+  .curaos-footer-badge { font-size: 0.72rem; white-space: normal; max-width: 100%; text-align: left; }
 }
 .brand-icon {
   display: inline-flex; align-items: center; justify-content: center;
