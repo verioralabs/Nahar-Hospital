@@ -622,7 +622,7 @@ function setupMobileNav() {
 
   // Close on resize to desktop (matches CSS desktop-nav breakpoint)
   window.addEventListener("resize", function(){
-    if (window.innerWidth >= 1241 && mobileNav.classList.contains("open")) setOpen(false);
+    if (window.innerWidth >= 1340 && mobileNav.classList.contains("open")) setOpen(false);
   });
 }
 
