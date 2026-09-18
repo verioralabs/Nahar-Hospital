@@ -91,6 +91,16 @@ const translations = {
     footerServicesTitle: "Key Services",
     footerContactTitle:  "Emergency 24/7",
     footerCopyright:    "© 2026 Nahar General Hospital, Savar. All rights reserved. IBM Carbon Design System.",
+    footerPowered:      "Powered by <img src=\"assets/images/curaos-logo-icon.png\" alt=\"CuraOS\" width=\"16\" height=\"16\" loading=\"lazy\"> CuraOS™ Enterprise Suite · Connected to CuraOS-LifeNet Network",
+
+    // CuraOS LifeNet — Blood Bank
+    bloodFinderBtn: "🩸 Emergency Blood Finder",
+    lifenetTitle:   "24/7 Digital Blood Bank & LifeNet Network",
+    lifenetDesc:    "Real-time blood stock tracking, anti-fraud verified donor network, and inter-hospital emergency transfers powered by CuraOS™.",
+    lifenetPoint1:  "Live ABO/Rh inventory across the region",
+    lifenetPoint2:  "Verified emergency donors on call",
+    lifenetPoint3:  "Hospital-to-hospital transfer coordination",
+    lifenetCta:     "Search Regional Blood Stock →",
   },
 
   bn: {
@@ -169,6 +179,16 @@ const translations = {
     footerServicesTitle: "প্রধান সেবাসমূহ",
     footerContactTitle:  "জরুরি সেবা ২৪/৭",
     footerCopyright:    "© ২০২৬ নাহার জেনারেল হাসপাতাল, সাভার। সর্বস্বত্ব সংরক্ষিত। আইবিএম কার্বন ডিজাইন সিস্টেম।",
+    footerPowered:      "চালিত <img src=\"assets/images/curaos-logo-icon.png\" alt=\"CuraOS\" width=\"16\" height=\"16\" loading=\"lazy\"> CuraOS™ এন্টারপ্রাইজ স্যুট · CuraOS-LifeNet নেটওয়ার্কে সংযুক্ত",
+
+    // CuraOS LifeNet — Blood Bank
+    bloodFinderBtn: "🩸 জরুরি রক্ত সন্ধান",
+    lifenetTitle:   "২৪/৭ ডিজিটাল ব্লাড ব্যাংক ও LifeNet নেটওয়ার্ক",
+    lifenetDesc:    "রিয়েল-টাইম রক্তের মজুদ ট্র্যাকিং, যাচাইকৃত জরুরি ডোনার নেটওয়ার্ক এবং CuraOS™ দ্বারা চালিত আন্তঃহাসপাতাল জরুরি স্থানান্তর।",
+    lifenetPoint1:  "অঞ্চলজুড়ে লাইভ ABO/Rh মজুদ",
+    lifenetPoint2:  "যাচাইকৃত জরুরি ডোনার প্রস্তুত",
+    lifenetPoint3:  "হাসপাতাল-থেকে-হাসপাতাল স্থানান্তর সমন্বয়",
+    lifenetCta:     "আঞ্চলিক রক্তের মজুদ খুঁজুন →",
   }
 };
 
